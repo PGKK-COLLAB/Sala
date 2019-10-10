@@ -1,0 +1,103 @@
+using System;
+
+namespace XCRT
+{
+	public static class CRT
+	{
+		public const int BLACK = 0;
+		public const int BLUE = 1;
+		public const int GREEN = 2;
+		public const int CYAN = 3;
+		public const int RED = 4;
+		public const int MAGENTA = 5;
+		public const int BROWN = 6;
+		public const int LIGHTGRAY = 7;
+		public const int DARKGRAY = 8;
+		public const int LIGHTBLUE = 9;
+		public const int LIGHTGREEN = 10;
+		public const int LIGHTCYAN = 11;
+		public const int LIGHTRED = 12;
+		public const int LIGHTMAGENTA = 13;
+		public const int YELLOW = 14;
+		public const int WHITE = 15;
+
+
+		static	ConsoleColor[] cores = {ConsoleColor.Black,
+										ConsoleColor.DarkBlue, 
+										ConsoleColor.DarkGreen,
+										ConsoleColor.DarkCyan,
+										ConsoleColor.DarkRed,
+										ConsoleColor.DarkMagenta,
+										ConsoleColor.DarkYellow,
+										ConsoleColor.Gray,	
+										ConsoleColor.DarkGray,
+										ConsoleColor.Blue,
+										ConsoleColor.Green,
+										ConsoleColor.Cyan,
+										ConsoleColor.Red,
+										ConsoleColor.Magenta,
+										ConsoleColor.Yellow,
+										ConsoleColor.White};
+		
+		public static void ClrScr(){	
+			Console.Clear();
+		}
+
+		public static void TextColor(int cor){	
+			Console.ForegroundColor = cores[cor];
+		}
+		
+		public static void BackGroundColor(int cor){
+			Console.BackgroundColor = cores[cor];
+		}
+
+		public static void GoToXY (int x, int y){
+			Console.SetCursorPosition(x-1, y-1);
+		}
+		
+		public static void WriteXY (int x, int y, string texto){
+			GoToXY(x,y);
+			Console.Write(texto);
+		}
+
+		public static string ReadLineXY (int x, int y){			
+			GoToXY(x,y);
+			return Console.ReadLine();
+		}
+		
+		public static void Window (int x, int y, int tx, int ty, int tipoborda){			
+			string borda = (tipoborda == 1) ? "┌┐┘└─│ " : "╔╗╝╚═║ ";
+			int xf = x + tx-1, yf = y + ty-1, xx, yy;
+						
+			WriteXY(x,y, borda.Substring (0,1));
+			WriteXY(xf,y, borda.Substring (1,1));
+			WriteXY(xf,yf, borda.Substring (2,1));
+			WriteXY(x,yf, borda.Substring (3,1));
+			
+			for (xx=x+1; xx<=xf-1; xx++){
+				WriteXY(xx,y, borda.Substring (4,1));
+				WriteXY(xx,yf, borda.Substring (4,1));
+			}
+			for (yy=y+1; yy<=yf-1; yy++){
+				WriteXY(x,yy, borda.Substring (5,1));
+				WriteXY(xf,yy, borda.Substring (5,1));
+			}
+						
+			for (xx=x+1; xx<=xf-1; xx++){
+				for (yy=y+1; yy<=yf-1; yy++){			
+					WriteXY(xx,yy, borda.Substring (6,1));
+				}
+			}
+			
+		}
+		
+		public static void WindowBS (int x, int y, int tx, int ty){		
+			Window(x, y, tx, ty, 1);
+		}
+		
+		public static void WindowBD (int x, int y, int tx, int ty){		
+			Window(x, y, tx, ty, 2);
+		}
+		
+	}
+}
