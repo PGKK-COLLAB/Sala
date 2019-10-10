@@ -1,0 +1,3019 @@
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using XCRT;
+using System.Threading;
+
+
+namespace crt
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        	string fidade = "0";
+        	bool Zwei = false;
+            string rp = "s";
+            string rn = "n";
+            string jooj = "j";
+            string Quiz = "q";
+            string[] nome = new string[1000] ;
+            double[] idade = new double[1000];
+            string gamertag = "o";
+            string e1 = "0";
+            double tocha = 0;
+            string e2 = "0";
+            string e3 = "0";
+            string aq = "0";
+            string resp2 = "0";
+            string gen = "nada";
+            string ad = "nada";
+            string e4 = "0";
+            string e5 = "0";
+            string n1 = "1";
+            string n2 = "2";
+            string n3 = "3";
+            string Ler = "rn";
+            string resp = "0";
+            string e6 = "0";
+            double Livro = 1;
+            double espada = 0;
+            string e7 = "0";
+            double leitura = 0;
+            string feitiço = "0";
+            string e8= "0";
+            double pq = 0;
+            double pj = 0;
+            string[] r= new string[1000];
+            string e9 = "0";
+           
+            Menu:
+            bool dt = false;
+            double bondade =0;
+            double maldade =0;
+            for(int u =0; u<=1000; u++){
+            CRT.BackGroundColor(CRT.DARKGRAY);
+            Console.Clear();
+
+            CRT.BackGroundColor(CRT.BLUE);
+
+            //primeiro F
+            //Linha Vertical
+            CRT.BackGroundColor(CRT.RED);
+            CRT.TextColor(CRT.RED);
+            CRT.WindowBD(42, 1, 2, 6);
+            //Primeira Linha Horizontal
+            CRT.BackGroundColor(CRT.RED);
+            CRT.TextColor(CRT.RED);
+            CRT.WindowBD(42, 1, 8, 1);
+            //Segunda Linha Horizontal
+            CRT.BackGroundColor(CRT.RED);
+            CRT.TextColor(CRT.RED);
+            CRT.WindowBD(42, 3, 8, 1);
+            
+            //E
+            //Linha Vertical
+            CRT.BackGroundColor(CRT.BLUE);
+            CRT.TextColor(CRT.BLUE);
+            CRT.WindowBD(51, 1, 2, 6);
+            //Primeira Linha Horizontal
+            CRT.BackGroundColor(CRT.BLUE);
+            CRT.TextColor(CRT.BLUE);
+            CRT.WindowBD(51, 1, 8, 1);
+            //Segunda Linha Horizontal
+            CRT.BackGroundColor(CRT.BLUE);
+            CRT.TextColor(CRT.BLUE);
+            CRT.WindowBD(51, 3, 8, 1);
+            //Terceira Linha Horizontal
+            CRT.BackGroundColor(CRT.BLUE);
+            CRT.TextColor(CRT.BLUE);
+            CRT.WindowBD(51, 6, 8, 1);
+            
+            //C
+            //Primeira Linha Vertical
+            CRT.BackGroundColor(CRT.GREEN);
+            CRT.TextColor(CRT.GREEN);
+            CRT.WindowBD(60, 1, 2, 6);
+            //Primeira Linha Horizontal
+            CRT.BackGroundColor(CRT.GREEN);
+            CRT.TextColor(CRT.GREEN);
+            CRT.WindowBD(60, 1, 8, 1);
+            //Segunda Linha Horizontal
+            CRT.BackGroundColor(CRT.GREEN);
+            CRT.TextColor(CRT.GREEN);
+            CRT.WindowBD(60, 6, 8, 1);
+
+            //I
+            //Linha Vertical
+            CRT.BackGroundColor(CRT.BROWN);
+            CRT.TextColor(CRT.BROWN);
+            CRT.WindowBD(69, 1, 2, 6);
+
+            //P
+            //Primeira Linha Vertical
+            CRT.BackGroundColor(CRT.CYAN);
+            CRT.TextColor(CRT.CYAN);
+            CRT.WindowBD(72, 1, 2, 6);
+            //Segunda Linha Vertical
+            CRT.BackGroundColor(CRT.CYAN);
+            CRT.TextColor(CRT.CYAN);
+            CRT.WindowBD(78, 1, 2, 3);
+            //Primeira Linha Horizontal
+            CRT.BackGroundColor(CRT.CYAN);
+            CRT.TextColor(CRT.CYAN);
+            CRT.WindowBD(72, 1, 8, 1);
+            //Segunda Linha Horizontal
+            CRT.BackGroundColor(CRT.CYAN);
+            CRT.TextColor(CRT.CYAN);
+            CRT.WindowBD(72, 3, 8, 1);
+
+            CRT.BackGroundColor(CRT.BLUE);
+            CRT.TextColor(CRT.WHITE);
+            CRT.WindowBD(20, 8, 80, 16);
+            CRT.WriteXY(30, 10, "Olá, bem vindo ao nosso projeto da FECIP!");
+            CRT.WriteXY(30, 11, "Por favor, digite seu nome e sua idade nos espaços indicados.");
+            CRT.WriteXY(30, 14, "Nome:");
+            CRT.WriteXY(30, 15, "Idade:");
+            nome[u] =CRT.ReadLineXY(35, 14);
+            idade[u] =Convert.ToDouble(CRT.ReadLineXY(36, 15));
+            if(idade[u]>100){
+            	CRT.WriteXY(30, 16, "Tem certeza que essa é sua idade?(s/n)");
+            	fidade = CRT.ReadLineXY(30,17);
+            	if(fidade=="n"){
+            		goto Menu;
+            	}
+            	if(fidade=="s"){
+            		CRT.WriteXY(30, 18,"Ah, tudo bem então, desculpe-me pelo inconveniente.");
+            		CRT.WriteXY(30, 19,"Pressione qualquer tecla para continuar.");
+            		Console.ReadKey(true);
+            	}
+            }
+
+            CRT.BackGroundColor(CRT.BLUE);
+
+            //Segundo F
+            //Linha Vertical
+            CRT.BackGroundColor(CRT.RED);
+            CRT.TextColor(CRT.RED);
+            CRT.WindowBD(42, 1, 2, 6);
+            //Primeira Linha Horizontal
+            CRT.BackGroundColor(CRT.RED);
+            CRT.TextColor(CRT.RED);
+            CRT.WindowBD(42, 1, 8, 1);
+            //Segunda Linha Horizontal
+            CRT.BackGroundColor(CRT.RED);
+            CRT.TextColor(CRT.RED);
+            CRT.WindowBD(42, 3, 8, 1);
+
+            //E
+            //Linha Vertical
+            CRT.BackGroundColor(CRT.BLUE);
+            CRT.TextColor(CRT.BLUE);
+            CRT.WindowBD(51, 1, 2, 6);
+            //Primeira Linha Horizontal
+            CRT.BackGroundColor(CRT.BLUE);
+            CRT.TextColor(CRT.BLUE);
+            CRT.WindowBD(51, 1, 8, 1);
+            //Segunda Linha Horizontal
+            CRT.BackGroundColor(CRT.BLUE);
+            CRT.TextColor(CRT.BLUE);
+            CRT.WindowBD(51, 3, 8, 1);
+            //Terceira Linha Horizontal
+            CRT.BackGroundColor(CRT.BLUE);
+            CRT.TextColor(CRT.BLUE);
+            CRT.WindowBD(51, 6, 8, 1);
+
+            //C
+            //Primeira Linha Vertical
+            CRT.BackGroundColor(CRT.GREEN);
+            CRT.TextColor(CRT.GREEN);
+            CRT.WindowBD(60, 1, 2, 6);
+            //Primeira Linha Horizontal
+            CRT.BackGroundColor(CRT.GREEN);
+            CRT.TextColor(CRT.GREEN);
+            CRT.WindowBD(60, 1, 8, 1);
+            //Segunda Linha Horizontal
+            CRT.BackGroundColor(CRT.GREEN);
+            CRT.TextColor(CRT.GREEN);
+            CRT.WindowBD(60, 6, 8, 1);
+
+            //I
+            //Linha Vertical
+            CRT.BackGroundColor(CRT.BROWN);
+            CRT.TextColor(CRT.BROWN);
+            CRT.WindowBD(69, 1, 2, 6);
+
+            //P
+            //Primeira Linha Vertical
+            CRT.BackGroundColor(CRT.CYAN);
+            CRT.TextColor(CRT.CYAN);
+            CRT.WindowBD(72, 1, 2, 6);
+            //Segunda Linha Vertical
+            CRT.BackGroundColor(CRT.CYAN);
+            CRT.TextColor(CRT.CYAN);
+            CRT.WindowBD(78, 1, 2, 3);
+            //Primeira Linha Horizontal
+            CRT.BackGroundColor(CRT.CYAN);
+            CRT.TextColor(CRT.CYAN);
+            CRT.WindowBD(72, 1, 8, 1);
+            //Segunda Linha Horizontal
+            CRT.BackGroundColor(CRT.CYAN);
+            CRT.TextColor(CRT.CYAN);
+            CRT.WindowBD(72, 3, 8, 1);
+
+            CRT.BackGroundColor(CRT.BLUE);
+            CRT.TextColor(CRT.WHITE);
+            CRT.WindowBD(20, 8, 80, 16);
+
+            if (idade[u] >= 12)
+            {
+                CRT.WriteXY(23, 10, "De acordo com a sua idade, você pode escolher entre o Rpg ou o Quiz.");
+                CRT.WriteXY(23, 11, "Caso deseje entrar no Rpg, digite R, caso queira o Quiz, digite Q.");
+                CRT.WriteXY(23, 13, "(Q/R):");
+                r[u] = Console.ReadLine();
+              
+                if(r[u]== "Media"){
+                	Console.Clear();
+                	Console.ForegroundColor=ConsoleColor.Cyan;
+                	Console.WriteLine("Número de pessoas que jogaram o RHOPE = {0}", pj);
+                	Console.WriteLine("Número de pessoas que jogaram o Quiz = {0}", pq);
+                	Console.ReadKey(true);
+                	goto Menu;
+                }
+                if (r[u] == "R" || r[u] == "r")
+                {
+                	pj =pj+1 ;
+                	r[u] = jooj;
+                    goto jooj;
+                    
+                }
+                if (r[u] == "Q" || r[u] == "q")
+                 {
+                	pq = pq+1;
+                	r[u] = Quiz;
+                     goto Quiz;
+                }
+                      
+            }
+            if (idade[u] < 12)
+            {
+                CRT.WriteXY(25, 10, "De acordo com a sua idade, você pode jogar o Quiz.");
+                CRT.WriteXY(25, 11, "Caso deseje jogar, digite Q, caso não, digite qualquer outro botão.");
+                CRT.WriteXY(23, 13, "(Q/Qualquer outra tecla):");
+                r[u] = Console.ReadLine();
+                
+                if (r[u]=="Q" || r[u] =="q")
+                {
+                	r[u] = Quiz;
+                    goto Quiz;
+                }
+            }
+          
+            Quiz:
+            if (r[u] == Quiz)
+            {
+                CRT.BackGroundColor(CRT.BLACK);
+                double pointy = 0;
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Clear();
+                goto quizes;
+                
+            quizes:
+                Console.Clear();
+                Console.WriteLine("Qual desses temas você quer jogar?");
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
+                Console.WriteLine("1)Jogos");
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("2)Animes/desenhos");
+                Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                Console.WriteLine("3)Youtubers");
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("4)Lógica");
+
+                string res = Console.ReadLine();
+
+                if (res == "1")
+                {
+                    goto jogos;
+                    Console.Clear();
+                    Console.ReadKey(true);
+                }
+
+                if (res == "2")
+                {
+                    goto desenho;
+                    Console.Clear();
+                }
+
+                if (res == "3")
+                {
+                    goto Youtube;
+                    Console.Clear();
+                }
+		if (res == "4")
+		{
+		goto Perglog1;
+		Console.Clear();
+                }
+		if (res == "Menu");
+		{
+		goto Menu;
+		Console.Clear();
+		}
+            jogos:
+                Console.Clear();
+                Thread.Sleep(100);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Primeira pergunta:Qual o jogo mais jogado no mundo?");
+                Console.ForegroundColor = ConsoleColor.White;
+                Thread.Sleep(900);
+                Console.WriteLine("(1) League of Legends");
+                Thread.Sleep(900);
+                Console.WriteLine("(2) Minecraft");
+                Thread.Sleep(900);
+                Console.WriteLine("(3) Roblox");
+                Thread.Sleep(900);
+                Console.WriteLine("(4) Fortnite");
+                string resj = Console.ReadLine();
+                 
+                if (resj != "1" && resj != "2" && resj != "3" && resj != "4")
+                {
+                    Console.WriteLine("Resposta inválida, por favor digite apenas uma das opções apresentadas!");
+                    Console.WriteLine("Digite algo para tentar de novo...");
+                    Console.ReadKey(true);
+                    goto jogos;
+                }
+
+                if (resj == "1")
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                	Console.WriteLine("Resposta correta, Parabéns {0}. Você ganhou um ponto!", nome);
+                    pointy = pointy + 1;
+                    Console.WriteLine("Digite algo para ir para próxima pergunta, por favor!");
+                    Console.ReadKey(true);
+                    goto jogos2;
+                }
+
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                	Console.WriteLine("Infelizmente sua resposta não está correta, você não recebeu nenhum ponto");
+                    Console.WriteLine("Digite algo para ir para a próxima pergunta, por favor!");
+                    Console.ReadKey(true);
+                    goto jogos2;
+                }
+                     
+            jogos2:
+                Console.Clear();
+                Thread.Sleep(100);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Sua atual pontuação é {0}", pointy);
+                Console.WriteLine("Segunda pergunta:Qual a plataforma mais usada para jogar?");
+                Console.ForegroundColor = ConsoleColor.White;
+                Thread.Sleep(900);
+                Console.WriteLine("1) PlayStation");
+                Thread.Sleep(900);
+                Console.WriteLine("2) Xbox");
+                Thread.Sleep(900);
+                Console.WriteLine("3) Computador");
+                Thread.Sleep(900);
+                Console.WriteLine("4) Nintendo");
+
+                string resj2 = Console.ReadLine();
+
+        
+
+                if (resj2 != "1" && resj2 != "2" && resj2 != "3" && resj != "4")
+                {
+                    Console.WriteLine("Resposta inválida, por favor digite apenas uma das opções apresentadas!");
+                    Console.WriteLine("Digite algo para tentar de novo...");
+                    Console.ReadKey(true);
+                    goto jogos2;
+                }
+
+                if (resj2 == "3")
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                	Console.WriteLine("Resposta correta, Parabéns {0}. Você ganhou um ponto!", nome);
+                    pointy = pointy + 1;
+                    Console.WriteLine("Digite algo para ir para próxima pergunta, por favor!");
+                    Console.ReadKey(true);
+                    goto jogos3;
+                }
+
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                	Console.WriteLine("Infelizmente sua resposta não está correta, você não recebeu nenhum ponto");
+                    Console.WriteLine("Digite algo para ir para a próxima pergunta, por favor!");
+                    Console.ReadKey(true);
+                    goto jogos3;
+                }
+
+            jogos3:
+                Console.Clear();
+                Thread.Sleep(100);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Sua atual pontuação é {0}", pointy);
+                Console.WriteLine("Terceira pergunta:Qual o console mais vendido no mundo?");
+                Console.ForegroundColor = ConsoleColor.White;
+                Thread.Sleep(900);
+                Console.WriteLine("1) WiiU");
+                Thread.Sleep(900);
+                Console.WriteLine("2) PlayStation 2");
+                Thread.Sleep(900);
+                Console.WriteLine("3) Atari");
+                Thread.Sleep(900);
+                Console.WriteLine("4) Super Nintendo");
+
+                string resj3 = Console.ReadLine();
+
+                
+
+                if (resj3 != "1" && resj3 != "2" && resj3 != "3" && resj3 != "4")
+                {
+                    Console.WriteLine("Resposta inválida, por favor digite apenas uma das opções apresentadas!");
+                    Console.WriteLine("Digite algo para tentar de novo...");
+                    Console.ReadKey(true);
+                    goto jogos3;
+                }
+
+                if (resj3 == "2")
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                	Console.WriteLine("Resposta correta, Parabéns {0}. Você ganhou um ponto!", nome);
+                    pointy = pointy + 1;
+                    Console.WriteLine("Digite algo para ir para próxima pergunta, por favor!");
+                    Console.ReadKey(true);
+                    goto jogos4;
+                }
+
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                	Console.WriteLine("Infelizmente sua resposta não está correta, você não recebeu nenhum ponto");
+                    Console.WriteLine("Digite algo para ir para a próxima pergunta, por favor!");
+                    Console.ReadKey(true);
+                    goto jogos4;
+                }
+
+            jogos4:
+                Console.Clear();
+                Thread.Sleep(100);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Sua atual pontuação é {0}", pointy);
+                Console.WriteLine("Quarta pergunta:Qual o maior mapa dos games??");
+                Console.ForegroundColor = ConsoleColor.White;
+                Thread.Sleep(900);
+                Console.WriteLine("1) No Man’s Sky");
+                Thread.Sleep(900);
+                Console.WriteLine("2) Final Fantasy XV");
+                Thread.Sleep(900);
+                Console.WriteLine("3) The Elder Scrolls 2");
+                Thread.Sleep(900);
+                Console.WriteLine("4) GTA San Andreas");
+
+                string resj4 = Console.ReadLine();
+
+                if (resj4 != "1" && resj4 != "2" && resj4 != "3" && resj4 != "4")
+                {
+                    Console.WriteLine("Resposta inválida, por favor digite apenas uma das opções apresentadas!");
+                    Console.WriteLine("Digite algo para tentar de novo...");
+                    Console.ReadKey(true);
+                    goto jogos4;
+                }
+
+                if (resj4 == "1")
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                	Console.WriteLine("Resposta correta, Parabéns {0}. Você ganhou um ponto!", nome);
+                    pointy = pointy + 1;
+                    Console.WriteLine("Digite algo para ir para próxima pergunta, por favor!");
+                    Console.ReadKey(true);
+                    goto jogos5;
+                }
+
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                	Console.WriteLine("Infelizmente sua resposta não está correta, você não recebeu nenhum ponto");
+                    Console.WriteLine("Digite algo para ir para a próxima pergunta, por favor!");
+                    Console.ReadKey(true);
+                    goto jogos5;
+                }
+
+            jogos5:
+                Console.Clear();
+                Thread.Sleep(100);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Sua atual pontuação é {0}", pointy);
+                Console.WriteLine("5) Qual o nome do protagonista de GTA San Andreas?");
+                Console.ForegroundColor = ConsoleColor.White;
+                Thread.Sleep(900);
+                Console.WriteLine("1) Carlos jhonsons");
+                Thread.Sleep(900);
+                Console.WriteLine("2) Caio Joseff");
+                Thread.Sleep(900);
+                Console.WriteLine("3) Carl Jhonson");
+                Thread.Sleep(900);
+                Console.WriteLine("4) Lil Nas X");
+
+                string resj5 = Console.ReadLine();
+
+              
+                if (resj5 != "1" && resj5 != "2" && resj5 != "3" && resj5 != "4")
+                {
+                    Console.WriteLine("Resposta inválida, por favor digite apenas uma das opções apresentadas!");
+                    Console.WriteLine("Digite algo para tentar de novo...");
+                    Console.ReadKey(true);
+                    goto jogos5;
+                }
+
+                if (resj5 == "3")
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                	Console.WriteLine("Resposta correta, Parabéns {0}. Você ganhou um ponto!", nome);
+                    pointy = pointy + 1;
+                    Console.WriteLine("Digite algo para ir para próxima pergunta, por favor!");
+                    Console.ReadKey(true);
+                    goto quizes;
+                }
+
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                	Console.WriteLine("Infelizmente sua resposta não está correta, você não recebeu nenhum ponto");
+                    Console.WriteLine("Digite algo para ir para a próxima pergunta, por favor!");
+                    Console.ReadKey(true);
+                    goto quizes;
+                }
+                 // este "goto" serve para ir para o menu.
+                    goto Quiz;
+                    Console.Clear();
+
+                
+
+            // Esta é a parte das perguntas sobre desenhos e animes.
+            desenho:
+                Console.Clear();
+                Thread.Sleep(100);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Olá, este é o quiz sobre desenho/anime");
+                Thread.Sleep(100);
+                Console.WriteLine("Aperte alguma tecla para continuar, por favor!");
+                Console.ReadKey(true);
+                goto pergdes1;
+
+            pergdes1:
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("1) Dragon Ball Z, anime mundialmente famoso estreado no Japão na Fuji TV em 26 de Abril de 1989 foi criado por quem?");
+                Console.ForegroundColor = ConsoleColor.White;
+                Thread.Sleep(300);
+                Console.WriteLine("(1) Masashi Kishimoto");
+                Thread.Sleep(300);
+                Console.WriteLine("(2) Akira Toriyama");
+                Thread.Sleep(300);
+                Console.WriteLine("(3) Antonio Cleyton");
+                Thread.Sleep(300);
+                Console.WriteLine("(4) Shen Goku");
+                string respdes1 = Console.ReadLine();
+
+                if (respdes1 != "1" && respdes1 != "2" && respdes1 != "3" && respdes1 != "4")
+                {
+                    Console.WriteLine("Resposta inválida, por favor digite apenas uma das opções apresentadas!");
+                    Console.WriteLine("Digite algo para tentar de novo...");
+                    Console.ReadKey(true);
+                    goto pergdes1;
+                }
+
+                if (respdes1 == "2")
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                	Console.WriteLine("Resposta correta, Parabéns {0}. Você ganhou um ponto!", nome);
+                    pointy = pointy + 1;
+                    Console.WriteLine("Digite algo para ir para próxima pergunta, por favor!");
+                    Console.ReadKey(true);
+                    goto pergdes2;
+                }
+
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                	Console.WriteLine("Infelizmente sua resposta não está correta, você não recebeu nenhum ponto");
+                    Console.WriteLine("Digite algo para ir para a próxima pergunta, por favor!");
+                    Console.ReadKey(true);
+                    goto pergdes2;
+                }
+
+            pergdes2:
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Pontuação atual:{0}", pointy);
+                Console.WriteLine("2) Como se chama a loja de Stanley, tio avô de Dipper e Mable(Gravit Falls)?");
+                Console.ForegroundColor = ConsoleColor.White;
+                Thread.Sleep(300);
+                Console.WriteLine("(1) Cabana dos mistérios");
+                Thread.Sleep(300);
+                Console.WriteLine("(2) A queda dos Darkin");
+                Thread.Sleep(300);
+                Console.WriteLine("(3) Loja dos mistérios");
+                Thread.Sleep(300);
+                Console.WriteLine("(4) Majula");
+                string respdes2 = Console.ReadLine();
+
+                if (respdes2 != "1" && respdes2 != "2" && respdes2 != "3" && respdes2 != "4")
+                {
+                	Console.WriteLine("Resposta inválida, por favor digite apenas uma das opções apresentadas!");
+                    Console.WriteLine("Digite algo para tentar de novo...");
+                    Console.ReadKey(true);
+                    goto pergdes2;
+                }
+
+                if (respdes2 == "1")
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                	Console.WriteLine("Resposta correta, Parabéns {0}. Você ganhou um ponto!", nome);
+                    pointy = pointy + 1;
+                    Console.WriteLine("Digite algo para ir para próxima pergunta, por favor!");
+                    Console.ReadKey(true);
+                    goto pergdes3;
+                }
+
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                	Console.WriteLine("Infelizmente sua resposta não está correta, você não recebeu nenhum ponto");
+                    Console.WriteLine("Digite algo para ir para a próxima pergunta, por favor!");
+                    Console.ReadKey(true);
+                    goto pergdes3;
+                }
+
+            pergdes3:
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Pontuação atual:{0}", pointy);
+                Console.WriteLine("3) Qual o real nome de Bart Simpson da Série Os Simpsons?");
+                Console.ForegroundColor = ConsoleColor.White;
+                Thread.Sleep(300);
+                Console.WriteLine("(1) Bart J. Simpson");
+                Thread.Sleep(300);
+                Console.WriteLine("(2) Bart Aldrich Simpson");
+                Thread.Sleep(300);
+                Console.WriteLine("(3) Bartholomew J. Bouvier Simpson");
+                Thread.Sleep(300);
+                Console.WriteLine("(4) Bart Robert Simpson");
+                string respdes3 = Console.ReadLine();
+
+                if (respdes3 != "1" && respdes3 != "2" && respdes3 != "3" && respdes3 != "4")
+                {
+                    Console.WriteLine("Resposta inválida, por favor digite apenas uma das opções apresentadas!");
+                    Console.WriteLine("Digite algo para tentar de novo...");
+                    Console.ReadKey(true);
+                    goto pergdes3;
+                }
+
+                if (respdes3 == "3")
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                	Console.WriteLine("Resposta correta, Parabéns {0}. Você ganhou um ponto!", nome);
+                    pointy = pointy + 1;
+                    Console.WriteLine("Digite algo para ir para próxima pergunta, por favor!");
+                    Console.ReadKey(true);
+                    goto pergdes4;
+                }
+
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                	Console.WriteLine("Infelizmente sua resposta não está correta, você não recebeu nenhum ponto");
+                    Console.WriteLine("Digite algo para ir para a próxima pergunta, por favor!");
+                    Console.ReadKey(true);
+                    goto pergdes4;
+                }
+
+            pergdes4:
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Pontuação atual:{0}", pointy);
+                Console.WriteLine("4) Qual foi o primeiro jinchuuriki a qual Naruto fez amizade?");
+                Console.ForegroundColor = ConsoleColor.White;
+                Thread.Sleep(300);
+                Console.WriteLine("(1) Killer Bee");
+                Thread.Sleep(300);
+                Console.WriteLine("(2) Rin");
+                Thread.Sleep(300);
+                Console.WriteLine("(3) Obito");
+                Thread.Sleep(300);
+                Console.WriteLine("(4) Gaara");
+                string respdes4 = Console.ReadLine();
+
+                if (respdes4 != "1" && respdes4 != "2" && respdes4 != "3" && respdes4 != "4")
+                {
+                    Console.WriteLine("Resposta inválida, por favor digite apenas uma das opções apresentadas!");
+                    Console.WriteLine("Digite algo para tentar de novo...");
+                    Console.ReadKey(true);
+                    goto pergdes4;
+                }
+
+                if (respdes4 == "4")
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                	Console.WriteLine("Resposta correta, Parabéns {0}. Você ganhou um ponto!", nome);
+                    pointy = pointy + 1;
+                    Console.WriteLine("Digite algo para ir para próxima pergunta, por favor!");
+                    Console.ReadKey(true);
+                    goto pergdes5;
+                }
+
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                	Console.WriteLine("Infelizmente sua resposta não está correta, você não recebeu nenhum ponto");
+                    Console.WriteLine("Digite algo para ir para a próxima pergunta, por favor!");
+                    Console.ReadKey(true);
+                    goto pergdes5;
+                }
+
+            pergdes5:
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Pontuação atual:{0}", pointy);
+                Console.WriteLine("5) Qual foi o primeiro alien em que Ben Tenyson (Ben 10) se transformou?");
+                Console.ForegroundColor = ConsoleColor.White;
+                Thread.Sleep(300);
+                Console.WriteLine("(1) Quatro Braços");
+                Thread.Sleep(300);
+                Console.WriteLine("(2) Massa Cinzenta");
+                Thread.Sleep(300);
+                Console.WriteLine("(3) Chama");
+                Thread.Sleep(300);
+                Console.WriteLine("(4) XLR8");
+                string respdes5 = Console.ReadLine();
+
+                if (respdes5 != "1" && respdes5 != "2" && respdes5 != "3" && respdes5 != "4")
+                {
+                    Console.WriteLine("Resposta inválida, por favor digite apenas uma das opções apresentadas!");
+                    Console.WriteLine("Digite algo para tentar de novo...");
+                    Console.ReadKey(true);
+                    goto pergdes5;
+                }
+
+                if (respdes5 == "3")
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                	Console.WriteLine("Resposta correta, Parabéns {0}. Você ganhou um ponto!", nome);
+                    pointy = pointy + 1;
+                    Console.WriteLine("Digite algo para ir para sessão de temas, por favor!");
+                    Console.ReadKey(true);
+                    goto quizes;
+                }
+
+
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                	Console.WriteLine("Infelizmente sua resposta não está correta, você não recebeu nenhum ponto");
+                    Console.WriteLine("Digite algo para ir para a sessão de temas, por favor!");
+                    Console.ReadKey(true);
+                    goto quizes;
+                    Console.Clear();
+                }
+
+
+    //youtube:
+            Youtube:
+                Console.Clear();
+                Thread.Sleep(100);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("1): Qual o maior canal do youtube atualmente?");
+                Console.ForegroundColor = ConsoleColor.White;
+                Thread.Sleep(900);
+                Console.WriteLine("(1) Felipe Neto");
+                Thread.Sleep(900);
+                Console.WriteLine("(2) PewDiePie");
+                Thread.Sleep(900);
+                Console.WriteLine("(3) T-Series");
+                Thread.Sleep(900);
+                Console.WriteLine("(4) Kondzilla");
+                string resy1 = Console.ReadLine();
+
+                if (resy1 != "1" && resy1 != "2" && resy1 != "3" && resy1 != "4")
+                {
+                    Console.WriteLine("Resposta inválida, por favor digite apenas alguma das alternativas dadas");
+                    Console.ReadKey(true);
+                    goto Youtube;
+                }
+
+
+                if (resy1 == "3")
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                	Console.WriteLine("Parabéns {0}, você acertou!", nome);
+                    Console.WriteLine("Pressione algo para ir para a próxima questão");
+                    pointy = pointy + 1;
+                    Console.ReadKey(true);
+                    goto perg2y;
+                }
+               
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                	Console.WriteLine("Infelizmente sua resposta não está correta, você não recebeu nenhum ponto");
+                    Console.ReadKey(true);
+                    goto perg2y;
+                }
+
+
+
+
+
+            perg2y:
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Sua pontuação atual é:{0}", pointy);
+                Thread.Sleep(100);
+                Console.WriteLine("2) Qual o maior canal do Brasil? ");
+                Console.ForegroundColor = ConsoleColor.White;
+                Thread.Sleep(900);
+                Console.WriteLine("(1) Felipe neto");
+                Thread.Sleep(900);
+                Console.WriteLine("(2) Whindersson Nunes");
+                Thread.Sleep(900);
+                Console.WriteLine("(3) Kéfera");
+                Thread.Sleep(900);
+                Console.WriteLine("(4) Kondzilla");
+                string resy2 = Console.ReadLine();
+
+                if (resy2 != "1" && resy2 != "2" && resy2 != "3" && resy2 != "4")
+                {
+                    Console.WriteLine("Resposta inválida, por favor digite apenas alguma das alternativas dadas");
+                    Console.ReadKey(true);
+                    goto perg2y;
+                }
+
+
+                if (resy2 == "4")
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                	Console.WriteLine("Parabéns {0}, você acertou!", nome);
+                    Console.WriteLine("Pressione algo para ir para a próxima questão");
+                    pointy = pointy + 1;
+                    Console.ReadKey(true);
+                    goto perg3y;
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                	Console.WriteLine("Infelizmente sua resposta não está correta, você não recebeu nenhum ponto");
+                    Console.ReadKey(true);
+                    goto perg3y;
+                }
+
+            perg3y:
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Sua pontuação atual é:{0}", pointy);
+                Thread.Sleep(100);
+                Console.WriteLine("3) O canal: Você Sabia, um dos maiores canais brasileiros, é formado por quem?");
+                Console.ForegroundColor = ConsoleColor.White;
+                Thread.Sleep(900);
+                Console.WriteLine("(1) Daniel Molo e Lukas Marques");
+                Thread.Sleep(900);
+                Console.WriteLine("(2) Davi figueireido e Lucas Molo");
+                Thread.Sleep(900);
+                Console.WriteLine("(3) Lucas e Gabriel Rodrigues");
+                Thread.Sleep(900);
+                Console.WriteLine("(4) Daniel Marques e Lukas ART");
+                string resy3 = Console.ReadLine();
+
+                if (resy3 != "1" && resy3 != "2" && resy3 != "3" && resy3 != "4")
+                {
+                    Console.WriteLine("Resposta inválida, por favor digite apenas alguma das alternativas dadas");
+                    Console.ReadKey(true);
+                    goto perg3y;
+                }
+
+
+                if (resy3 == "1")
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                	Console.WriteLine("Parabéns {0}, você acertou!", nome);
+                    Console.WriteLine("Pressione algo para ir para a próxima questão");
+                    pointy = pointy + 1;
+                    Console.ReadKey(true);
+                    goto perg4y;
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                	Console.WriteLine("Infelizmente sua resposta não está correta, você não recebeu nenhum ponto");
+                    Console.ReadKey(true);
+                    goto perg4y;
+                }
+
+            perg4y:
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Sua pontuação atual é:{0}", pointy);
+                Thread.Sleep(100);
+                Console.WriteLine("4) No dia 23 de Abril de 2005 foi postado o primero vídeo do youtube, como era o vídeo?");
+                Console.ForegroundColor = ConsoleColor.White;
+                Thread.Sleep(900);
+                Console.WriteLine("(1) Um passeio em uma montanha russa dos Estados Unidos, postado por um dos criadores do site e intitulado 'Radical Day'");
+                Thread.Sleep(900);
+                Console.WriteLine("(2) Um passeio no zoológico feito pelo jovem Yakov Laptsky no jardim zoológico de San Diego e postado por Jawed Karin, um dos criadores do youtube");
+                Thread.Sleep(900);
+                Console.WriteLine("(3) Uma gameplay de Dragon Ball Z: Budokai 3 e upado por Mickey Whazalski, o primeiro youtuber do mundo");
+                Thread.Sleep(900);
+                Console.WriteLine("(4) Um documentário sobre a segunda guerra mundial");
+                string resy4 = Console.ReadLine();
+
+                if (resy4 != "1" && resy4 != "2" && resy4 != "3" && resy4 != "4")
+                {
+                    Console.WriteLine("Resposta inválida, por favor digite apenas alguma das alternativas dadas");
+                    Console.ReadKey(true);
+                    goto perg4y;
+                }
+
+
+                if (resy4 == "2")
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                	Console.WriteLine("Parabéns {0}, você acertou!", nome);
+                    Console.WriteLine("Pressione algo para ir para a próxima questão");
+                    pointy = pointy + 1;
+                    Console.ReadKey(true);
+                    goto perg5y;
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                	Console.WriteLine("Infelizmente sua resposta não está correta, você não recebeu nenhum ponto");
+                    Console.ReadKey(true);
+                    goto perg5y;
+                }
+
+            perg5y:
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Sua pontuação atual é:{0}", pointy);
+                Console.Clear();
+                Thread.Sleep(100);
+                Console.WriteLine("5) A ex namorada do youtuber Cellbit gravou um exposed sobre seu relacionamento, qual o nome da ex namorada de Cellbit?");
+                Console.ForegroundColor = ConsoleColor.White;
+                Thread.Sleep(900);
+                Console.WriteLine("(1) Sasa");
+                Thread.Sleep(900);
+                Console.WriteLine("(2) Kéfera");
+                Thread.Sleep(900);
+                Console.WriteLine("(3) Luna");
+                Thread.Sleep(900);
+                Console.WriteLine("(4) Caju");
+                string resy5 = Console.ReadLine();
+
+                if (resy5 != "1" && resy5 != "2" && resy5 != "3" && resy5 != "4")
+                {
+                    Console.WriteLine("Resposta inválida, por favor digite apenas alguma das alternativas dadas");
+                    Console.ReadKey(true);
+                    goto perg5y;
+                }
+
+
+                if (resy5 == "1")
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                	Console.WriteLine("Parabéns {0}, você acertou!", nome);
+                    Console.WriteLine("Pressione algo para ir para a próxima questão");
+                    pointy = pointy + 1;
+                    Console.ReadKey(true);
+                    goto quizes;
+                    Console.Clear();
+                }
+               // else neste caso significa que caso o usuário nao digite "a" como resposta, aparcerá em sua tela a seguinte mensagem:
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                	Console.WriteLine("Infelizmente sua resposta não está correta, você não recebeu nenhum ponto");
+                    Console.ReadKey(true);
+                    goto Menu;
+                }
+                
+                 Perglog1:
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Primeira pergunta:Imagine que você está dirigindo um ônibus com 400 passageiros");
+            Console.WriteLine("No primeiro ponto descem 10 pessoas e sobem 15");
+            Console.WriteLine("No segundo ponto descem 75 pessoas e nao sobe nenhuma");
+            Console.WriteLine("No último ponto subiram 30 pessoas e desceram 12;");
+            Console.WriteLine("Qual o nome do motorista?");
+            
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("1) {0}", nome[u]);
+            Console.WriteLine("2) Kaio");
+            Console.WriteLine("3) Gustavo");
+            Console.WriteLine("4) Pedro");
+            string resplog1 = Console.ReadLine();
+
+
+            if (resplog1 != "1"  && resplog1 != "2" && resplog1 != "3" && resplog1 != "4")
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Por favor {0}, digite somente uma das letras das alternativas dadas", nome[u]);
+                Console.ReadKey(true);
+                goto Perglog1;
+            }
+
+            if (resplog1 == "1")
+            {
+            	
+                pointy++;
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Parabéns {0}, você acertou!", nome[u]);
+                Console.WriteLine("Digite algo para ir para a próxima pergunta");
+                Console.ReadKey(true);
+                goto Perglog2;
+            }
+            else
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Infelizmente, {0}, você errou", nome[u]);
+                Console.WriteLine("Digite algo para ir para a próxima pergunta");
+                Console.ReadKey(true);
+                goto Perglog2;
+            }
+
+
+        Perglog2:
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Pontos:{0}", pointy);
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Segunda pergunta Olhe para a seguinte sequência de números e diga qual é o próximo:");
+            Console.WriteLine("2-10-12-16-17-18-19-...");
+            Console.WriteLine("Diga qual é o próximo número");
+
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("1) 20");
+            Console.WriteLine("2) 200");
+            Console.WriteLine("3) 35");
+            Console.WriteLine("4) 25");
+            string resplog2 = Console.ReadLine();
+
+            if (resplog2 != "1" && resplog2 != "2" && resplog2 != "3" && resplog2 != "4")
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Por favor {0}, digite somente uma das letras das alternativas dadas", nome[u]);
+                Console.ReadKey(true);
+                goto Perglog2;
+            }
+
+            if (resplog2 == "2")
+            {
+                pointy++;
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Parabéns {0}, você acertou!", nome[u]);
+                Console.WriteLine("Digite algo para ir para a próxima pergunta");
+                Console.ReadKey(true);
+                goto Perglog3;
+            }
+            else
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Infelizmente, {0}, você errou", nome[u]);
+                Console.WriteLine("Digite algo para ir para a próxima pergunta");
+                Console.ReadKey(true);
+                goto Perglog3;
+            }
+
+        Perglog3:
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Pontos:{0}", pointy);
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Terceira pergunta: Quantos animais de cada espécie Moisés levou na arca?");
+            
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("1) 2");
+            Console.WriteLine("2) 4");
+            Console.WriteLine("3) Nenhum");
+            Console.WriteLine("4) 700000");
+            string resplog3 = Console.ReadLine();
+
+            if (resplog3 != "1" && resplog3 != "2" && resplog3 != "3" && resplog3 != "4")
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Por favor {0}, digite somente uma das letras das alternativas dadas", nome[u]);
+                Console.ReadKey(true);
+                goto Perglog3;
+            }
+
+            if (resplog3 == "3")
+            {
+                pointy++;
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Parabéns {0}, você acertou!", nome[u]);
+                Console.WriteLine("Digite algo para ir para a próxima pergunta");
+                Console.ReadKey(true);
+                goto Perglog4;
+            }
+            else
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Infelizmente, {0}, você errou", nome[u]);
+                Console.WriteLine("Digite algo para ir para a próxima pergunta");
+                Console.ReadKey(true);
+                goto Perglog4;
+            }
+        Perglog4:
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Pontos:{0}", pointy);
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Quarta pergunta: Se em uma obra, 15 trabalhadores levam 5 dias para cavar um grande buraco...");
+            Console.WriteLine("Quantos dias 2 trabalhadores levam pra cavar meio buraco?");
+
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("1) 7 dias");
+            Console.WriteLine("2) 9 dias");
+            Console.WriteLine("3) Nenhum, não dá pra cavar meio buraco");
+            Console.WriteLine("4) 34 dias");
+            string resplog4 = Console.ReadLine();
+
+            if (resplog4 != "1" && resplog4 != "2" && resplog4 != "3" && resplog4 != "4")
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Por favor {0}, digite somente uma das letras das alternativas dadas", nome[u]);
+                Console.ReadKey(true);
+                goto Perglog4;
+            }
+
+            if (resplog4 == "3")
+            {
+                pointy++;
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Parabéns {0}, você acertou!", nome[u]);
+                Console.WriteLine("Digite algo para ir para a próxima pergunta");
+                Console.ReadKey(true);
+                goto Perglog4;
+            }
+            
+            else
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Infelizmente, {0}, você errou", nome[u]);
+                Console.WriteLine("Digite algo para ir para a próxima pergunta");
+                Console.ReadKey(true);
+                goto Perglog5;
+            }
+        Perglog5:
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Pontos:{0}", pointy);
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Quinta pergunta: Em uma sala quadrada, há um gato em cada canto");
+            Console.WriteLine("Cada gato vê outros três gatos, quantos gatos há no total?");
+
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("1) 12");
+            Console.WriteLine("2) 9");
+            Console.WriteLine("3) 11");
+            Console.WriteLine("4) 4");
+            string resplog5 = Console.ReadLine();
+
+            if (resplog5 != "1" && resplog5 != "2" && resplog5 != "3" && resplog5 != "4")
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Por favor {0}, digite somente uma das letras das alternativas dadas", nome[u]);
+                Console.ReadKey(true);
+                goto Perglog5;
+            }
+
+            if (resplog5 == "3")
+            {
+                pointy++;
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Parabéns {0}, você acertou!", nome[u]);
+                Console.WriteLine("Digite algo para ir para o menu");
+                Console.ReadKey(true);
+                goto quizes;
+            }
+
+            else
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Infelizmente, {0}, você errou", nome[u]);
+                Console.WriteLine("Digite algo para ir para o menu");
+                Console.ReadKey(true);
+                goto quizes;
+            }
+
+        
+
+                
+                
+                Console.Write("Aperte qualquer botão para sair");
+                Console.ReadKey(true);
+                goto Menu;
+            }
+	   
+
+
+
+            jooj:
+            if (r[u] == jooj)
+            {
+            	#region{
+                Console.Clear();
+
+                Console.BackgroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("!");
+                Console.Clear();
+
+
+
+                Console.WriteLine("O jogo é um rpg de texto, bem parecido com os jogos antigos.");
+                Thread.Sleep(1000);
+
+                Console.WriteLine("Deseja ingressar na aventura?(s/n).");
+                aq = (Console.ReadLine());
+
+                if ((aq != "s" && aq != "n"))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Por favor, {0}, siga as instruções e selecione uma das alternativas.", nome);
+                    Thread.Sleep(2000);
+                    Console.Clear();
+                    goto jooj;
+                }
+
+                if(aq=="n"){
+                	Console.WriteLine("Deseja jogar o Quiz?(s/n)");
+                	string m = Console.ReadLine();
+                	if(m=="n"){
+                		goto Menu;}
+                	if(m=="s"){
+                		r[u]= Quiz;
+                		goto Quiz;
+                	}
+                }
+
+
+
+                Console.Clear();
+                Console.BackgroundColor = ConsoleColor.DarkBlue;
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("!");
+                Console.Clear();
+
+            //Definição da gamertag.
+            Creation:
+                Console.WriteLine("Olá jogador, insira seu apelido.");
+                gamertag = (Console.ReadLine());
+                Console.WriteLine("Seu personagem será masculino ou feminino?(m/f)");
+                gen = (Console.ReadLine());
+
+                if ((gen != "f" && gen != "m"))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Por favor, {0}, siga as instruções do jogo e selecione uma das alternativas.", nome);
+                    Thread.Sleep(1000);
+                    Console.Clear();
+                    goto Creation;
+                }
+                else
+                {
+
+                    if (gen == "m")
+                    {
+                        gen = "ele";
+                    }
+                    if (gen == "f")
+                    {
+                        gen = "ela";
+                    }
+                }
+
+                if (gen == "ele")
+                {
+                    ad = "o";
+                }
+                else
+                {
+                    ad = "a";
+                }
+
+                //Explicação do jogo.
+                Console.WriteLine("Olá {0}, nesse jogo, você terá como objetivo fugir de uma caverna subterrânea, possuindo vários obstáculos e situações de risco.", gamertag);
+                Thread.Sleep(3500);
+                Console.WriteLine("A mecânica desse jogo se baseia em respostas objetivas, sendo marcadas por números que aparecerão como tópicos.");
+                Thread.Sleep(3500);
+                Console.WriteLine("Sua tarefa é observar as opções, avaliar as possibilidades e julgar qual será a melhor ação para aquele momento.");
+                Thread.Sleep(3500);
+                Console.Write("Lembrando que suas ações irão influenciar o jogo, então,"); Thread.Sleep(1500); Console.ForegroundColor = ConsoleColor.Red; Console.Write(" e"); Thread.Sleep(350); Console.Write("s"); Thread.Sleep(350); Console.Write("c"); Thread.Sleep(350); Console.Write("o"); Thread.Sleep(350); Console.Write("l"); Thread.Sleep(350); Console.Write("h"); Thread.Sleep(350); Console.Write("a"); Thread.Sleep(350); Console.Write(" "); Thread.Sleep(350); Console.Write("c"); Thread.Sleep(350); Console.Write("o"); Thread.Sleep(350); Console.Write("m"); Thread.Sleep(350); Console.Write(" "); Thread.Sleep(350); Console.Write("s"); Thread.Sleep(350); Console.Write("a"); Thread.Sleep(350); Console.Write("b"); Thread.Sleep(350); Console.Write("e"); Thread.Sleep(350); Console.Write("d"); Thread.Sleep(350); Console.Write("o"); Thread.Sleep(350); Console.Write("r"); Thread.Sleep(350); Console.Write("i"); Thread.Sleep(350); Console.Write("a"); Thread.Sleep(350); Console.WriteLine(".");
+                Thread.Sleep(3500);
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("Uma coisa que vale lembrar é que esse jogo possui é um sistema de cores interativas, que possibilitam uma experiência melhor no jogo.");
+                Thread.Sleep(3500);
+                Console.WriteLine("Outro detalhe, toda vez que ver '...', pressione qualquer tecla para continuar.");
+                Thread.Sleep(3500);
+                Console.WriteLine("Espero que curta a aventura. Explore tudo que puder, {0}.", gamertag);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Thread.Sleep(2500);
+                Console.WriteLine("Pressione qualquer botão para começar a aventura.");
+
+                Console.ReadKey(true);
+                Console.Clear();
+                Console.BackgroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("!");
+                Console.Clear();
+
+                //Início do jogo.
+                Console.WriteLine("{0} acorda em uma caverna, sem conhecimento de como chegou lá e de como sair.", gamertag);
+                Thread.Sleep(2000);
+                Console.WriteLine("Após se levantar, começa a vasculhar a caverna em busca de informações sobre que lugar era aquele.");
+                Thread.Sleep(2000);
+                Console.WriteLine("Depois de vasculhar o ambiente, {0} percebe a presença de uma tocha, sendo ela a única forma de iluminação do lugar.", gamertag);
+                Thread.Sleep(2000);
+                Console.WriteLine("Percebe também a presença de duas portas, uma a sua frente, sendo essa grande e feita de metal, aparentemente trancada e com vozes vindo do outro lado.");
+                Thread.Sleep(2000);
+                Console.WriteLine("E, no lado oposto a porta de metal, uma pequena porta de madeira escondida, que parecia ser usada para fugas.");
+                Thread.Sleep(2000);
+            d1:
+                //Primeira decisão.
+                Console.WriteLine("{0} se vê com as seguintes opções:", gamertag);
+                Thread.Sleep(1500);
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("1-Pegar a tocha.");
+                Thread.Sleep(500);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("2-Seguir pela porta de madeira.");
+                Thread.Sleep(500);
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("3-Esperar.");
+                Thread.Sleep(1500);
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("Escolha uma delas.");
+                e1 = (Console.ReadLine());
+
+                if ((e1 != "1" && e1 != "2" && e1 != "3"))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Por favor, {0}, siga as instruções do jogo e selecione uma das alternativas.", nome);
+                    Thread.Sleep(3500);
+                    Console.Clear();
+                    goto d1;
+
+                }
+
+                else
+                {
+                    if (e1 == "1")
+                    {
+
+                        tocha = 1;
+                        Console.WriteLine("{0} pega a tocha e segue pela porta de madeira...", gamertag);
+                        Console.ReadKey(true);;
+                        Console.BackgroundColor = ConsoleColor.Gray;
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine("!");
+                        Console.Clear();
+
+                    }
+
+                    if (e1 == "3")
+                    {
+                        Console.Write("{0} espera por alguns minutos", gamertag); Thread.Sleep(350); Console.Write("."); Thread.Sleep(350); Console.Write("."); Thread.Sleep(350); Console.WriteLine(".");
+                        Thread.Sleep(1000); Console.Write("E."); Thread.Sleep(350); Console.Write("."); Thread.Sleep(350); Console.Write("."); Thread.Sleep(350); Console.Write("nada acontece.");
+                        Thread.Sleep(3000);
+                        Console.Clear();
+                        goto d1;
+                    }
+					
+                    if(e1=="2"){
+                    Console.BackgroundColor = ConsoleColor.DarkGray;
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("!");
+                    Console.Clear();
+                    }
+                    Console.WriteLine("Após andar alguns metros, {0} percebe uma parede de tijolos.", gamertag);
+                    Thread.Sleep(1000);
+                    Console.WriteLine("Aparentemente, aqueles tijolos foram postos recentemente, e, com uma certa força, {0} conseguiria remové-los.", gen);
+                    Thread.Sleep(1000);
+                d2:
+                    Console.WriteLine("{0} se vê diante das seguintes opções:", gamertag);
+                    Thread.Sleep(500);
+                    Console.WriteLine("1-Forçar a parede.");
+                    Thread.Sleep(500);
+                    Console.WriteLine("2-Seguir o corredor.");
+                    Thread.Sleep(1000);
+                    Console.WriteLine("Escolha, por favor.");
+                    e2 = (Console.ReadLine());
+                    if (e2 == "Voltar para d1.")
+                    {
+                        goto d1;
+                    }
+                    if ((e2 != "1" && e2 != "2"))
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Por favor, {0}, siga as instruções do jogo e selecione uma das alternativas.", nome);
+                        Thread.Sleep(3500);
+                        Console.Clear();
+                        goto d2;
+
+                    }
+
+                    else
+                    {
+                        if (e2 == "1")
+                        {
+                            //Início do path II.
+                            Console.WriteLine("{0} força a parede, que, após ceder, revela um buraco. Enquanto {1} tentava se decidir se pularia ou não, duas criaturas esverdeadas chega por trás e {2} empurram...", gamertag, gen, ad);
+                            Console.ReadKey(true);
+                            Console.WriteLine("{0} percebe que outra pessoa caía com {1}. {1} tentou se aproximar do ser, porém o mesmo se dissolveu em sombras, deixando apenas o eco de sua voz para trás.", gamertag, gen);
+                            Thread.Sleep(1000);
+                            Console.ForegroundColor = ConsoleColor.Black;
+                            Console.WriteLine("-Agora, serei eu o narrador da história.-");
+                            Thread.Sleep(1000);
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            Console.Write("-Ei, a narração é minha, saia daqui.-");
+                            Thread.Sleep(1000);
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.WriteLine("Disse o narrador, porém o ser sombrio já o havia eliminado.");
+                            Thread.Sleep(1000);
+                            Console.ForegroundColor = ConsoleColor.Black;
+                            Console.WriteLine("-Que os jogos começem!-");
+                            Thread.Sleep(350); Console.Write("-Ha "); Thread.Sleep(350); Console.Write("Ha "); Thread.Sleep(350); Console.Write("Ha.-");
+                            Console.ReadKey(true);
+                            Console.Clear();
+
+
+                        PathII:
+
+                            Console.BackgroundColor = ConsoleColor.Black;
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.WriteLine("!");
+                            Console.Clear();
+
+
+                            //texto I
+
+                           
+
+                            Console.Write("Durante a queda, a");
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            Console.Write(" tocha ");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.WriteLine("se solta de sua mão, porém pouco tempo depois você ja estava no chão novamente");
+                            Thread.Sleep(2000);
+
+                            Console.Write("A");
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            Console.Write(" tocha ");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.WriteLine("caiu numa poça de água e se apagou, mas, diferente da sua expectiva, luz não foi um problema");
+                            Thread.Sleep(2000);
+
+                            Console.Write("A sua frente um corredor iluminado por");
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            Console.WriteLine(" Pedras Solares.");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Thread.Sleep(2000);
+
+                            Console.Write("Enquanto você segue o corredor,é possivel perceber desenhos e rabiscos de");
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.Write(" águias ");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.WriteLine("riscadas violentamente...");
+
+
+                            Console.ReadKey(true);
+                            Console.Clear();
+
+                            //Decisão I
+
+                            Console.WriteLine("Após o corredor você alcança uma sala igualmente iluminada");
+                            Thread.Sleep(2000);
+
+                            Console.WriteLine("É possível ver duas portas, ambas abertas, dentro de uma, algo que parece uma sala de estudos");
+                            Thread.Sleep(2000);
+
+                            Console.WriteLine("Dentro da segunda, mais um corredor que parece menor que o anterior");
+                            Thread.Sleep(2000);
+
+                            Console.WriteLine("Você tem as seguintes opções:");
+                            Console.WriteLine("1.sala de estudos");
+                            Console.WriteLine("2.seguir o corredor");
+                            Console.WriteLine("Escolha.");
+                            resp = Console.ReadLine();
+
+
+                            if (resp == n1)
+                            {
+                                Console.WriteLine("Dentro da sala você encontra um livro escrito na lingua comum, que parece ser um tipo de dicionário.");
+                                Thread.Sleep(2000);
+                                Console.WriteLine("Se você ler ele,isso talvez te ajude" +
+                                "a entender textos que você encontre pelo caminho. Deseja Ler?(s/n)");
+                            Denovo:
+                                string respA = Console.ReadLine();
+
+                                if (respA == rp)
+                                {
+                                    Console.WriteLine("Você consegue aprender o suficiente para entender um pouco mais do idioma local");
+                                    Ler = rp;
+                                    Console.WriteLine("Depois disso você segue pelo corredor...");
+                                    Console.ReadKey(true);
+                                    Console.Clear();
+                                    goto Corredor2;
+                                }
+                                if (resp2 == rn)
+                                {
+                                    Console.WriteLine("Você volta para o corredor e segue caminho, deixando o livro para trás...");
+                                    Console.ReadKey(true);
+                                    Console.Clear();
+                                    goto Corredor2;
+                                }
+                                if (resp2 != rp && resp2 != rn)
+                                {
+                                    Console.ForegroundColor = ConsoleColor.Magenta;
+                                    Console.WriteLine("Por favor responda somente com s/n...");
+                                    Console.ReadKey(true);
+                                    Console.Clear();
+                                    goto Denovo;
+                                }
+
+                            }
+                            if (resp == n2)
+                            {
+                                Console.WriteLine("Você ignora a sala e segue caminho.");
+                                Thread.Sleep(1500);
+                                Console.Clear();
+                                goto Corredor2;
+                            }
+                        //Fim da Decisão I
+                        //Inicio Texto II
+
+                            Corredor2:
+
+                            Console.Write("Após andar alguns minuto,");
+                            Console.WriteLine("você se depara com um grandioso portal");
+                            Thread.Sleep(2500);
+                            Console.WriteLine("O topo dele parece ter sido alterado a muito tempo, deixando o portal ainda maior do que já era.");
+                            Thread.Sleep(2500);
+                            Console.WriteLine("Depois de atravessar o portal, você se depara com três portas menores a sua frente.");
+                            Thread.Sleep(2500);
+                            Console.Write("Cada uma adornada com um animal diferente em seu topo:");
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            Console.Write("uma águia dourada,");
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("uma cobra de esmeralda ");
+                            if (Ler == rp)
+                            {
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                                Console.WriteLine("E um Warg de safira");
+                            }
+                            if (Ler == rn)
+                            {
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                                Console.WriteLine("E um Lobo de safira,mas ela parece trancada");
+                            }
+                            Console.WriteLine("Por qual delas você seguira?");
+                            Thread.Sleep(0500);
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            Console.WriteLine("1.Águia");
+
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("2.Serpente");
+
+                            if (Ler == rn)
+                            {
+
+                                Console.WriteLine("3.Lobo");
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+
+                            }
+                            if (Ler == rp)
+                            {
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                                Console.WriteLine("3.Warg");
+                            }
+                            string respB = Console.ReadLine();
+                            if (respB == n1)//aguia
+                            {
+                                Console.Clear();
+                                Console.Write("Você passa pelo caminho da");
+                                Console.ForegroundColor = ConsoleColor.Yellow;
+                                Console.WriteLine("águia");
+                                Console.ForegroundColor = ConsoleColor.White;
+
+                                Console.WriteLine("A porta atrás de você fecha");
+
+                                Console.WriteLine("O chão se abre,você cai até sua morte");
+                                Console.ForegroundColor = ConsoleColor.Red;
+
+                                Console.WriteLine("A sua historia acaba aqui,mas talvez fosse possível chegar mais longe");
+                                Console.WriteLine("{0} morre e ninguém mais ouve falar sobre ele novamente...", gamertag);
+
+                                Console.ReadKey(true);
+                                Console.Clear();
+                                goto Menu;
+                            }
+                            if (respB == n2)//serpente
+                            {
+                                Console.Clear();
+                                Console.Write("Você passa pelo caminho da");
+                                Console.ForegroundColor = ConsoleColor.Green;
+                                Console.WriteLine("Serpente");
+                                Console.ForegroundColor = ConsoleColor.White;
+                                Console.Clear();
+                                goto Area1;
+
+
+
+                            }
+                            if (respB == n3)//lobinhooooo
+                            {
+                                Console.Clear();
+                                Console.Write("Você passa pelo caminho do");
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                                Console.WriteLine("lobo");
+                                Console.ForegroundColor = ConsoleColor.White;
+
+                                Console.WriteLine("É um caminho estreito,pela primeira vez desde que você caiu aqui,mal iluminado");
+
+                                Console.WriteLine("pelo menos não é um caminho longo,após alguns minutos andando com dificuldade " +
+                                                   "você alcança o que parece ser o fim desse caminho...");
+                                Console.ReadKey(true);
+                                Console.Clear();
+                                goto SeArea1;
+                            }
+                        SeArea1:
+                            Console.Clear();
+                            Console.WriteLine("Ao chegar em uma pequena sala no final do caminho uma coisa chama sua atenção");
+                            Thread.Sleep(1500);
+                            Console.WriteLine("Um cadáver mumificado do que parece um comandante anão,ao lado dos restos mortais" +
+                                              " do possível Lord anão,você encontra uma Zweihander e uma carta escrita com pressa pelo morto");
+
+                            Console.WriteLine("Inspecionar a carta(s/n)");
+                            string respS2 = Console.ReadLine();
+                            if (respS2 == rp)
+                            {
+                                if (Ler == rp)
+                                {
+                                    Console.WriteLine("na carta está escrito:");
+                                    Console.WriteLine("Eles passaram");
+                                    Console.WriteLine("duvido quem vá ler essa carta");
+                                    Console.WriteLine("mas se alguém conseguir");
+                                    Console.WriteLine("Se ainda hoouver tempo");
+                                    Console.WriteLine("avise ao Rei Sweyn");
+                                    	
+                                    Console.WriteLine("após ler a carta você se vira para a espada...");
+                                    Console.ReadKey(true);
+                                }
+                                else
+                                {
+                                    Console.WriteLine("A carta parece ter sido escrita as pressas e com o sangue do próprio anão");
+                                    Console.ReadKey(true);
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("Você ignora a carta e se vira para a espada");
+                            }
+
+                            Console.WriteLine("Pegar a Espada?(s/n)");
+                            string respS1 = Console.ReadLine();
+                            if (respS1 == rp)
+                            {
+                                Zwei = true;
+                                Console.WriteLine("Você decide levar a espada com você");
+                            }
+                            if (respS1 == rn)
+                            {
+                                Console.WriteLine("Você decide ignorar a espada já que ela seria só mais peso pra carregar");
+                            }
+                            goto Area1;
+
+                        Area1://salão brabo
+                            Console.WriteLine("Um corredor se abre a sua frente,após segui-lo você chega a um salão com grandes estátuas");
+                            Thread.Sleep(1500);
+                            Console.WriteLine("As grandiosas obras de arte a sua frente refletem toda a luz gerada por uma pedra solar no teto");
+                            Thread.Sleep(1500);
+                            Console.WriteLine("Após alguns segundos você segue seu caminho e deixa o salão para trás...");
+                            Console.ReadKey(true);
+                            Console.Clear();
+                            goto Area2;
+                        Area2://encontro com o Golem
+                            Console.Clear();
+                            Console.WriteLine("Ao seguir o corredor fora do salão você percebe uma diferença na região");
+                            Thread.Sleep(1500);
+                            Console.WriteLine("A sua frente você vê pequenos esqueletos e alguns que parecem ser de outra raça");
+                            Thread.Sleep(1500);
+                            Console.WriteLine("As Paredes riscadas e quebradas o fazem pensar que uma batalha ocorreu neste lugar");
+                            Thread.Sleep(1500);
+                            Console.WriteLine("E em meio a esse campo de batalha e suas vitímas,você vê uma estátua,");
+                            Thread.Sleep(1500);
+                            Console.WriteLine("Ela não se encaixa nesse ambiente,deseja inspecionar-lá?(s/n)");
+
+                            resp = Console.ReadLine();
+                            if (resp == rp)
+                            {
+                                Console.WriteLine("Ao olhar mais de perto a 'estátua' você percebe que ela começa a se mexer revelando ser um golem");
+                                Thread.Sleep(1500);
+                                Console.WriteLine("você se distancia num pulo para trás,e percebe que o golem a sua frente não parece amigável");
+                                Thread.Sleep(1000);
+                                Console.WriteLine("1.Você pode esperar uma oportunidade para tentar passar por ele");
+                                Console.WriteLine("2.Ou passar correndo logo");
+                                if (Zwei == false)
+                                    Console.Write("...");
+                                if (Zwei == true)
+                                {
+                                    Console.WriteLine("3.Ou pode tentar acertar ele com a espada...");
+                                }
+                                resp2 = Console.ReadLine();
+                                if (resp2 == n1)
+                                {
+                                    Console.WriteLine("Após esperar por alguns segundos o golem já levantou completamente");
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("Ele começa a avançar em sua direção");
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("Mas ao pisar com sua perna direita no chão ela se parte e a criatura cai no chão");
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("Antes que a criatura possa reagir você já pulou por cima dela e seguiu correndo...");
+                                    Console.ReadKey(true);
+                                    Console.Clear();
+                                    goto Area3;
+                                }
+                                if (resp2 == n2)
+                                {
+                                    Console.WriteLine("Você tenta passar enquanto a criatura ainda está se levantando");
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("Num golpe rápido o golem derruba sem dificuldade");
+                                    Thread.Sleep(1000);    
+                                    Console.WriteLine("Você cai no chão por causa da dor,antes de você conseguir se arrastar para a segurança");
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("A criatura te alcança e te finaliza antes disso,após isso ela volta ao repouso");
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    
+                                    Console.WriteLine("A sua historia acaba aqui,mas talvez fosse possível chegar mais longe");
+                                    Console.WriteLine("{0} morre e ninguém mais ouve falar sobre ele novamente...", gamertag);
+                                    Console.ReadKey(true);
+                                    Console.Clear();
+                                    goto Menu;
+                                }
+                                if (resp2 == n3) 
+                                {
+                                    Console.WriteLine("Você avança na criatura empunhando a lâmina em suas mãos");
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("Ela estica um braço numa tentativa fútil de o acertar");
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("Mas você desvia com maestria e acerta a criatura no centro de seu peito");
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("O golem começa a se desfazer lentamente até que não exista nada em sua frente além");
+                                    Console.WriteLine("Somente uma esfera dourada que caiu do centro do golem...");
+                                    
+                                    Console.ReadKey(true);
+                                    Console.Clear();
+                                    goto Area3;
+                                }
+                            Area3:
+                                Console.WriteLine("Depois de seguir pelo corredor por alguns minutos,você chega a uma área mais ampla");
+                                Thread.Sleep(1000);
+                                Console.WriteLine("A sua frente uma porta de proporções monumentais,você percebe que a porta está aberta");
+                                Thread.Sleep(1000);
+                                Console.WriteLine("é visível que a batalha seguiu até esse ponto");
+                                Thread.Sleep(1000);
+                                Console.WriteLine("tem algo escrito na porta,deseja tentar ler?(s/n)");
+                                resp = Console.ReadLine();
+                                if (resp == rp)
+                                {
+                                if (Ler == rp)
+                                 {
+                                	Console.WriteLine("está escrito:");
+                                	Console.WriteLine("Nobres homens de bem,");
+                                	Console.WriteLine("Jamais ouseis profanar");
+                                	Console.WriteLine("esta (...) maldita...");
+                                	Console.WriteLine("o resto está ilegível");
+                                 }
+                                else
+                                 { 
+                                	Console.WriteLine("você consegue ler parte do texto,está escrito");
+                                	Console.WriteLine("(...) homens de (...)");
+                                    Console.WriteLine("Jamais ouseis (...)");
+                                    Console.WriteLine("esta (...)");                   
+                                	Console.WriteLine("Você não consegue ler o resto");
+                                 }
+                                }
+                                if (resp == rn)
+                                {
+                                	Console.WriteLine("Você ignora o texto,mas ao lado dessa área é possível ver uma porta");
+                                	Console.WriteLine("Seguir em direção a porta?(s/n)");
+                                    resp = Console.ReadLine();
+                                	if (resp == rp)
+                                	{
+                                		Console.WriteLine("Ao passar pela porta você vê que não tem muita coisa atrás da porta");
+                                		Thread.Sleep(1000);
+                                		Console.WriteLine("somente algumas prateleiras com livros e uma mesa no centro");
+                                		Thread.Sleep(1000);
+                                		Console.WriteLine("depois disso você volta a outra sala...");
+                                		Console.ReadKey(true);
+                                	}
+                                	if (resp == rn)
+                                	{
+                                		Console.WriteLine("A porta não é interessante o suficiente para tirar sua atenção da passagem a sua frente");
+                                		Thread.Sleep(1000);
+                                		Console.WriteLine("Você a ignora e segue pela grande porta a sua frente...");
+                                		Console.ReadKey(true);
+                                	}
+                                }
+                                Console.WriteLine("Ao passar pela porta você se assusta,uma imagem macabra assombra sua visão");
+                                Thread.Sleep(1000);
+                                Console.WriteLine("Um esqueleto colossal se encontra a sua frente,você se lembra dos contos de dragões");
+                                Thread.Sleep(1000);
+                                Console.WriteLine("As grandes asas alcançam o teto e os dentes do tamanho de espadas saem da boca da criatura");
+                                Thread.Sleep(1000);
+                                Console.WriteLine("Mas enquanto você ainda está assustado tudo começa a tremer e um pedaço caiu do teto");
+                                
+                                	Console.WriteLine("Tentar voltar?(s/n)");
+                                	resp = Console.ReadLine();
+                                    if (resp == rp)
+                                    {
+                                    	Console.WriteLine("Quando você se vira para tentar voltar uma outra rocha cai fechando a entrada");
+                                    	Console.WriteLine("Você fica trancado nesta sala desmoronando...");
+                                    	Console.ReadKey(true);
+                                    }
+                                    if (resp == rn)
+                                    {
+                                    	Console.WriteLine("A surpresa de ver tudo caindo ao seu redor te impede de reagir");
+                                    	Console.ReadKey(true);
+                                    }
+                                    
+                                Console.Clear();
+                                Console.WriteLine("Uma imagem começa a se formar enquanto sai do chão");
+                                Thread.Sleep(1500);
+                                Console.WriteLine("Uma voz sai da forma:");
+                                Thread.Sleep(1500);	
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("-Quem é você humano");
+                                Thread.Sleep(1500);
+                                Console.WriteLine("-Foi você que me libertou?-");
+                                Thread.Sleep(1500);
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                                Console.Write("-Te libertar?Quem é você?-");
+                                Console.ForegroundColor = ConsoleColor.White;
+                                Console.WriteLine("Você diz");
+                                Thread.Sleep(1500);
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("-Você não me conhece?Deve ter passado mais " +
+                                                  "tempo do que eu imaginei");
+                                Thread.Sleep(1500);
+                                Console.WriteLine("-Como eu posso falar de uma forma que você entenda...-");
+                                Thread.Sleep(1500);
+                                Console.WriteLine("-Acho eu meu nome seria algo como Sszzaas," +
+                                	                "o deus da magia de sangue da minha época-");
+                                Thread.Sleep(1500);
+                                Console.ForegroundColor = ConsoleColor.White;
+                                Console.WriteLine("Enquanto vocês conversam tudo continua desmoranar");
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Thread.Sleep(1500);
+                                Console.WriteLine("-Então qual é o seu nome?-");
+                                Thread.Sleep(1500);
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                                Console.WriteLine("-Se você é um deus então pode nos tirar daqui,certo?-");
+                                Thread.Sleep(1500);
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("-É claro que eu posso mas porque eu salvaria um infiel?-");
+                                Thread.Sleep(1500);
+                                Console.WriteLine("-Se você que ser salvo então aceite meu presente e");
+                                Console.WriteLine ("traga de volta a magia de sangue para esse mundo-");
+                                Thread.Sleep(1500);
+                                Console.ForegroundColor = ConsoleColor.White;
+                                Console.WriteLine("Enquanto ele fala ele estende sua mão com uma esfera" +
+                                                  "de um líquido preto,então ele termina sua frase...");
+                                Thread.Sleep(1500);
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("-Então humano aceitará meu presente e se tornará meu emissário?-");
+                                Console.ForegroundColor = ConsoleColor.White;
+                                Console.WriteLine("aceitar?(s/n)");
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                                resp = Console.ReadLine();
+                                if (resp == rp)
+                                {
+                                	Console.ForegroundColor = ConsoleColor.White;
+                                	Console.WriteLine("Você estica seu braço para aceitar presente,sabendo que isso teria um custo");
+                                	Thread.Sleep(1500);
+                                	Console.WriteLine("Ao tocar na esfera você sente o líquido entrando se seu corpo");
+                                	Thread.Sleep(1500);
+                                	Console.WriteLine("A dor te faz fechar os olhos,quando você consegue abrir eles de novo");
+                                	 Console.WriteLine("Você já está fora da caverna sem saber onde,mas você sabe que Sszzaas fez a parte dele...");
+                                	
+                                    Console.ReadKey(true);
+                                    Console.Clear();
+                                    goto final;
+                                }
+                                if (resp == rn)
+                                {
+                                	Console.ForegroundColor = ConsoleColor.Cyan;
+                                	Console.WriteLine("-Eu não vou me vender pra você,prefiro morrer aqui e ir conhecer Paluthena-");
+                                	Thread.Sleep(1500);
+                                	Console.ForegroundColor = ConsoleColor.Red;
+                                	Console.WriteLine("-Devo dizer suas palavras partem meu coração,mas pessoas determinadas" +
+                                	                  "são muito irritantes então... tchau ser se nome");
+                                	Thread.Sleep(1500);	
+                                    Console.ForegroundColor = ConsoleColor.White;                                   
+                                	Console.WriteLine("A forma some te deixando só na caverna,mas bom agora pelo menos você vai conhecer Paluthena...");
+                                	
+                                	Console.ReadKey(true);
+                                    Console.Clear();
+                                    goto final;
+                                
+                                }
+                               final:
+                                Console.ReadKey(true);
+                                goto Menu;
+                            
+                            
+                            
+                            }
+                        }
+
+
+                            else
+                            {
+                                Console.WriteLine("{0} segue pelo corredor...", gamertag);
+                            }
+                            //Fim da primeira parte.
+                            Console.ReadKey(true);
+                            Console.Clear();
+                            Console.BackgroundColor = ConsoleColor.DarkCyan;
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.WriteLine("!");
+                            Console.Clear();
+
+                            Console.WriteLine("Depois de caminhar mais alguns metros, {0} se encontra numa sala com caixas.", gamertag);
+                            Thread.Sleep(5000);
+                            Console.WriteLine("{0} escuta vozes vindas da direção oposta de onde {0} entrou.", gen);
+                            Thread.Sleep(5000);
+                            Console.WriteLine("{0} consegue enxergar um manto e uma espada no canto da sala, possuindo tempo para pegar apenas um desses itens.", gen);
+                            Thread.Sleep(3000);
+                        d3:
+
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Thread.Sleep(3000);
+                            Console.WriteLine("{0} se vê diante das seguintes escolhas:", gamertag);
+                            Thread.Sleep(500);
+                            Console.WriteLine("1-Pegar a espada.");
+                            Thread.Sleep(500);
+                            Console.WriteLine("2-Pegar o manto.");
+                            Thread.Sleep(1500);
+                            Console.WriteLine("Escolha, por favor.");
+                            e3 = (Console.ReadLine());
+                            Console.Clear();
+
+                            if ((e3 != "1" && e3 != "2"))
+                            {
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("Por favor, {0}, siga as instruções do jogo e selecione uma das alternativas.", nome);
+                                Thread.Sleep(3000);
+                                Console.Clear();
+                                goto d3;
+
+                            }
+                            else
+                            {
+                                if ((e3 == "1" && tocha == 0 || e3 == "2" && tocha == 1))
+                                {
+                                    if ((e3 == "1" && tocha == 0))
+                                    {
+                                        Console.WriteLine("{0} pega a espada.", gamertag);
+                                        Thread.Sleep(2000);
+                                        Console.Write("Os donos das vozes aparecem,");
+                                        Console.Write(" revelando dois seres bem pequenos,");
+                                        Console.Write(" de pele esverdeada e olhos amarelhos");
+                                        Console.WriteLine(" cujos cada um carregam um porrete simples.");
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("Quando {0} veem, se agitam e partem para cima.",ad);
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("Por sorte, seus reflexos agem e {0} consegue defender o primeiro golpe, nocauteando um dos seres.", gen);
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("Porém, o segundo ser acerta sua cabeça e {0} perde a consciência.", gamertag);
+                                        Thread.Sleep(2000);
+
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("{0} joga a tocha no chão e pega o manto.", gamertag);
+                                        Thread.Sleep(2000);
+                                        Console.Write("Os donos das vozes aparecem,");
+                                        Console.Write(" revelando dois seres bem pequenos,");
+                                        Console.Write(" de pele esverdeada e olhos amarelhos");
+                                        Console.WriteLine(" cujos cada um carregam um porrete simples.");
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("Eles ignoram a tocha e vão procurar {0}.", gamertag);
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("Não demora muito tempo para que {0} notem.", ad);
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("O primeiro, assim que {0} vê, parte para o ataque. Com seus reflexos rápidos, {1} consegue desviar.", ad, gen);
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("Porém, o segundo ser acerta sua cabeça e {0} perde a consciência.", gamertag);
+                                        Thread.Sleep(2000);
+                                    }
+                                    Console.WriteLine("{0} morre e ninguém mais ouve falar sobre ele novamente.", gamertag);
+                                    Thread.Sleep(2000);
+                                    Console.WriteLine("Você perdeu, infelizmente, {0}. Porém, caminhou bem até aqui. Tente novamente mais tarde, pode ser que vença o jogo.", nome);
+                                    Thread.Sleep(2000);
+                                    Console.WriteLine("Obrigado pela jornada, {0}, e que os ventos de Paluthena estejam com você...", nome);
+                                    Console.ReadKey(true);
+                                    goto Menu;
+                                }
+                                if ((e3 == "1" && tocha == 1 || e3 == "2" && tocha == 0))
+                                {
+                                    if ((e3 == "1" && tocha == 1))
+                                    {
+                                        Console.WriteLine("{0} pega a espada.", gamertag);
+                                        Thread.Sleep(1000);
+                                        Console.Write("Os donos das vozes aparecem,");
+                                        Console.Write(" revelando dois seres bem pequenos,");
+                                        Console.Write(" de pele esverdeada e olhos amarelhos");
+                                        Console.WriteLine(" carregando porretes simples.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Ao verem {0}, as criaturas se agitam.", gamertag);
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("{0} age com os reflexos e joga a tocha numa das criaturas, que cai no chão agonizando.", gamertag);
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("O segundo ser se agita, partindo para cima de {0}.", gamertag);
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("Porém, usando seus reflexos, {0} consegue perfurar a criatura com a espada.", gen);
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("Com um golpe na cabeça, mata a primeira criatura.");
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("{0} percebe que a tocha apagou, então segue pelo caminho de onde os seres vieram...", gamertag);
+
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("{0} pega o manto e encosta na parede para tentar se disfarçar.", gamertag);
+                                        Thread.Sleep(2000);
+                                        Console.Write("Os donos das vozes aparecem,");
+                                        Console.Write(" revelando dois seres bem pequenos,");
+                                        Console.Write(" de pele esverdeada e olhos amarelhos");
+                                        Console.WriteLine(" cujos cada um carregam um porrete simples.");
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("As criaturas passam por {0} sem sequer notarem-n{1}.", gen, ad);
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("Após os seres sairem da sala em direção ao corredor que {0} levou até lá, {1} tampa a passagem com as caixas.", ad, gamertag);
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("{0} larga o manto, pega a espada e segue pelo caminho do qual os seres vieram...", gen);
+                                    }
+                                    //Fim da segunda parte.
+
+
+                                    Console.ReadKey(true);
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("!");
+                                    Console.Clear();
+
+                                    Console.WriteLine("Após alguns minutos de caminhada, {0} encontra uma bifurcação", gamertag);
+                                    Thread.Sleep(2000);
+
+                                    Console.WriteLine("Da direita, {0} sente uma brisa fraca, porém, pode ser a saída.", gamertag);
+                                    Thread.Sleep(2000);
+                                    Console.WriteLine("Da esquerda, {0} não consegue perceber nada devido a escuridão do corredor.", gen);
+                                    Thread.Sleep(2000);
+                                d4:
+
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("{0} se vê diante das seguintes opções:", gamertag);
+                                    Thread.Sleep(500);
+                                    Console.WriteLine("1-Seguir pela esquerda.");
+                                    Thread.Sleep(500);
+                                    Console.WriteLine("2-Seguir pela direita.");
+                                    Thread.Sleep(1500);
+                                    Console.WriteLine("Escolha, por favor.");
+                                    e4 = (Console.ReadLine());
+
+                                    if ((e4 != "1" && e4 != "2"))
+                                    {
+                                        Console.ForegroundColor = ConsoleColor.Red;
+                                        Console.WriteLine("Por favor, {0}, siga as instruções do jogo e selecione uma das alternativas.", nome);
+                                        Thread.Sleep(3000);
+                                        Console.Clear();
+                                        goto d4;
+
+                                    }
+                                    if (e4 == "2")
+                                    {
+                                        Console.WriteLine("{0} segue para a direita...", gamertag);
+                                        Console.ReadKey(true);
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.Gray;
+                                    Console.WriteLine("!");
+                                    Console.Clear();
+									
+                                    Console.WriteLine("{0} segue pelo corredor e sente a brisa fresca batendo no rosto.", gamertag);
+                                    Thread.Sleep(2000);
+                                    Console.WriteLine("Quando {0} chega no fim do corredor, percebe um buraco no teto por causa dos raios de luz que atravessam por ele.", gen);
+                                    Thread.Sleep(2000);
+                                    Console.WriteLine("Porém, o buraco estava inalcançável devido a altura...");
+                                    
+                                    string Rdky=Convert.ToString(Console.ReadKey());
+                                    if (Rdky=="rSystem.ConsoleKeyInfo")
+                                    {
+                                    	Console.Clear();
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("!");
+                                    Console.Clear();
+                                    Console.WriteLine("Você percebe que foi inútil andar até esse ponto, porém, já que caminhou até aqui, resolve descansar um pouco.");
+                                    Thread.Sleep(2000);
+                                    Console.WriteLine("No momento em que você apoia na parede, ela começa a tremer e você percebe que ela está se abrindo.");
+                                    Thread.Sleep(2000);
+                                    Console.WriteLine("Ao passar pela abertura, você chega a uma sala pouco iluminada com quatro estátuas desgastadas...");
+                                    Console.ReadKey(true);
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkBlue;
+                                    Console.WriteLine("!");
+                                    Console.Clear();
+                                    Thread.Sleep(2000);
+                                    Console.WriteLine("Você se aproxima, observando as estátuas. Quanto chega mais perto, percebe que têm algumas placas um pouco abaixo de cada uma das estátuas.");
+                                    Thread.Sleep(2000);
+                                    Console.WriteLine("Aproximando-se para poder ler o que está escrito, você observa as seguintes mensagens.");
+                                    Thread.Sleep(500);
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("Gundroid.");
+                                    Thread.Sleep(500);
+                                    Console.ForegroundColor = ConsoleColor.Yellow;
+                                    Console.WriteLine("Kairitsu.");
+                                    Thread.Sleep(500);
+                                    Console.ForegroundColor = ConsoleColor.Green;
+                                    Console.WriteLine("MrKaioMan.");
+                                    Thread.Sleep(500);
+                                    Console.ForegroundColor = ConsoleColor.Cyan;
+                                    Console.WriteLine("MaxMaximus");
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Thread.Sleep(500);
+                                    Console.WriteLine("Após ler esses nomes, você se aproxima mais, porém sente algo sombrio por perto.");
+                                    Thread.Sleep(2000);
+                                    Console.WriteLine("Você consegue virar rápido o suficiente para ver uma fumaça preta vindo na sua direção.");
+                                    Thread.Sleep(2000);
+                                    Console.WriteLine("Ela te rodeia e você começa a se sentir tonto...");
+                                    Console.ReadKey(true);
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkGray;
+                                    Console.WriteLine("!");
+                                    Console.Clear();
+                                    Console.WriteLine("Quando acorda, você se sente estranho, porém, aparentemente, nada havia mudado.");
+                                    Thread.Sleep(1500);
+                                    Console.WriteLine("Após esses acontecimentos, você volta todo o caminho e segue pela esquerda...");
+                                     Console.ReadKey(true);
+                                    dt = true;
+                                    }
+                                    
+                                    Console.Clear();
+                                    
+                                    
+                                    
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("{0} segue pela esquerda.", gamertag);
+                                        Thread.Sleep(2500);
+                                        Console.WriteLine("Após alguns minutos, {0} se pergunta o porquê de ter escolhido esse caminho...", gen);
+ 										Console.ReadKey(true);
+                                    }
+                                   
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.WriteLine("!");
+                                    Console.Clear();
+                                    Console.WriteLine("{0} chega a uma parte onde o corredor muda, passando de pedra para madeira.", gamertag);
+                                    Thread.Sleep(2000);
+                                    Console.WriteLine("Pequenos trechos de luz iluminam pedaços do corredor.");
+                                    Thread.Sleep(2000);
+                                    Console.WriteLine("{0} chega em uma sala circular.", gamertag);
+                                    Thread.Sleep(2000);
+                                    Console.WriteLine("Uma estátua de uma mulher de cabelos curtos e pose de misericórdia parece {0} encarar.", ad);
+                                    Thread.Sleep(2000);
+                                d5:
+
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("{0} se vê com as seguintes opções:", gamertag);
+                                    Thread.Sleep(2000);
+                                    Console.WriteLine("1-Inspecionar a estátua.");
+                                    Thread.Sleep(500);
+                                    Console.WriteLine("2-Seguir reto.");
+                                    Thread.Sleep(1500);
+                                    Console.WriteLine("Escolha, por favor.");
+                                    e5 = (Console.ReadLine());
+                                    Console.Clear();
+                                    if ((e5 != "1" && e5 != "2"))
+                                    {
+                                        Console.ForegroundColor = ConsoleColor.Red;
+                                        Console.WriteLine("Por favor, {0}, siga as instruções do jogo e selecione uma das alternativas.", nome);
+                                        Thread.Sleep(3000);
+                                        Console.Clear();
+                                        goto d5;
+                                    }
+                                    if (e5 == "2")
+                                    {
+                                        Console.WriteLine("{0} segue reto, ignorando a estátua. Porém, {1} tem um leve vislumbre de que conhecia aquela estátua.", gamertag, gen);
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Quando estava prestes a sair da sala, {0} escuta um barulho.",gamertag);
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Num impulso, olha para trás a tempo de ver a estátua ganhando vida.");
+                                        Thread.Sleep(3000);
+                                        Console.ForegroundColor = ConsoleColor.Red;
+
+                                        Console.Write("-Ousastes me ignorar?-"); Console.ForegroundColor = ConsoleColor.White; Console.WriteLine("Grita a estátua, segurando o que parecia ser um martelo de pedra.");
+                                        Thread.Sleep(3000);
+                                        Console.ForegroundColor = ConsoleColor.Red;
+
+                                        Console.Write("-Sofrer-te-á as consequências de teus atos!-"); Console.ForegroundColor = ConsoleColor.White; Console.WriteLine("Disse a mulher, levantando o martelo.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Antes d{0} {1} sequer perceber, a mulher já estava atrás d{2}.", ad, gamertag, gen);
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Com seus reflexos, {0} conseguiu deter o primeiro golpe, a espada infelizmente não teve a mesma sorte.", gen);
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Assim, quando a estátua acertou seu primeiro golpe, {0} conseguiu defendê-lo, porém, a espada se partiu ao meio.", gen);
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("{0}, num momento de desespero, se joga contra a saída da sala, mas uma parede se ergueu tão rápido que {1} não teve reação a não ser se preparar para o impacto.", gamertag, gen);
+                                        Thread.Sleep(3000);
+                                        Console.ForegroundColor = ConsoleColor.Red;
+
+
+                                        Console.Write("-Tu conheces a lenda de Paluthena?-"); Console.ForegroundColor = ConsoleColor.White; Console.WriteLine(" Pergunta a mulher, andando na direção d{0} {1}.", ad, gamertag);
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("{0} então se recorda da lenda da deusa do vento, Paluthena, porém, já era tarde demais.", gamertag); 
+                                        Console.WriteLine("Quando olha para cima, vê o martelo da deusa prestes a esmagá-lo.");
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("{0} morre e ninguém mais ouve falar sobre {1}.", gamertag, gen);
+
+                                        Thread.Sleep(2000);
+
+                                        Console.WriteLine("Dispensando formalidades, ó mulher que sempre foi irritada. Bem, pelo menos ela poupou teu corpo.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Tu fostes bem para chegar até aqui, talvez, se tivesse inspecionado, teria saido vivo.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("De qualquer forma, parabéns por ter chegado tão longe. Volta mais tarde, talvez consiga achar a saída sem ter tua cabeça destroçada.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Obrigado pela aventura, {0}. Que os ventos(e não o martelo) de Paluthena te acompanhe.", gamertag);
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Pressione qualquer tecla para sair.");
+                                        Console.ReadKey(true);
+                                        goto Menu;
+                                    }
+                                    if (e5 == "1")
+                                        Console.WriteLine("{0} começa a olhar a estátua. Logo {1} percebe que já a conhecia, era a estátua da deusa Paluthena, deusa dos ventos.", gamertag, gen);
+                                    Thread.Sleep(3000);
+                                    Console.Write("{0} se ajoelha. E.", gamertag); Thread.Sleep(350); Console.Write("."); Thread.Sleep(350); Console.WriteLine(".");
+                                    Thread.Sleep(3000);
+                                    Console.WriteLine("Nada parece acontecer, até que a estátua começa a tremer.");
+                                    Thread.Sleep(3000);
+                                    Console.ForegroundColor = ConsoleColor.Blue;
+
+                                    Console.Write("-Arh!-"); Console.ForegroundColor = ConsoleColor.White; Console.Write("Disse a mulher, aparentemente estalando as costas."); Console.ForegroundColor = ConsoleColor.Blue; Console.WriteLine("-Tinha esquecido como isso doía.-");
+                                    Thread.Sleep(3000);
+                                    Console.Write("-Ah, olá pequen{0}, como estás?-", ad); Console.ForegroundColor = ConsoleColor.White; Console.Write("Disse a mulher, sorrindo para {0}.", gamertag); Console.ForegroundColor = ConsoleColor.Blue; Console.WriteLine("-Você é {0} primeir{0} aqui em muito tempo.-", ad);
+                                    Thread.Sleep(3000);
+                                    Console.Write("-O que fazes aqui?-"); Console.ForegroundColor = ConsoleColor.White; Console.WriteLine("Disse a mulher, descendo do pedestal que ficava."); if (gen == "ele") { Console.ForegroundColor = ConsoleColor.Green; } if (gen == "ela") { Console.ForegroundColor = ConsoleColor.Magenta; }; Console.Write("-Estou tentando sair dessa caverna.-"); Console.ForegroundColor = ConsoleColor.White; Console.WriteLine("Disse {0}.", gamertag);
+                                    Thread.Sleep(3000);
+                                    Console.ForegroundColor = ConsoleColor.Blue; Console.Write("-Gostei de você, vou te ajudar.-"); Console.ForegroundColor = ConsoleColor.White; Console.WriteLine("Disse a mulher, pouco antes de desaparecer em luz.");
+                                    Thread.Sleep(3000);
+                                    Console.Write("{0} se pergunta ond.", gamertag); Thread.Sleep(350); Console.Write("."); Thread.Sleep(350); Console.WriteLine(".");
+                                    Thread.Sleep(3000);
+                                    Console.ForegroundColor = ConsoleColor.Cyan;
+
+                                    Console.Write("-Ei, a narrativa é minha.-"); Console.ForegroundColor = ConsoleColor.White; Console.WriteLine("Disse o narrador, porém, Paluthena já havia tomado o controle e mandado ele a obedecer.");
+                                    Thread.Sleep(3000);
+                                    Console.ForegroundColor = ConsoleColor.Blue; Console.Write("-Agora, quem comanda sou eu!-"); Console.ForegroundColor = ConsoleColor.White; Console.WriteLine("Disse a deusa. Ih, gostei disso. Quer dizer que eu posso ver tudo o que acontece, acho que já estou me acostumando com o novo emprego.");
+                                    Thread.Sleep(3000);
+                                    Console.WriteLine("Falando nisso, vejo que escolheu bem ao me saudar, {0}, mal sabe o que eu teria feito se houvesse desrespeitado minha imagem.", nome);
+                                    Thread.Sleep(3000);
+                                    Console.WriteLine("Enfim, agora que eu estou no comando, vamos seguir com essa jornada!");
+                                    Thread.Sleep(3000);
+                                    Console.ForegroundColor = ConsoleColor.Cyan; Console.WriteLine("-Você só não pode lhe dizer o que fazer.-"); Console.ForegroundColor = ConsoleColor.White; Console.WriteLine("Disse o antigo narrador, que deveria estar quieto no seu canto...");
+                                    Console.ReadKey(true);
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkGreen;
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("!");
+                                    Console.Clear();
+
+                                    Console.WriteLine("Após andar por muito tempo, você chega a uma estrutura que se parece com um templo subterrâneo."); 
+                                    Thread.Sleep(3000);
+                                    Console.WriteLine("Sinceramente, se parece bastante com um dos templos que louvam a minha imagem.");
+                                    Thread.Sleep(3000);
+                                    Console.WriteLine("Você entra e começa a andar pelo hall principal.");
+
+                                    Thread.Sleep(3000);
+                                    if (gen == "ele") { Console.ForegroundColor = ConsoleColor.Green; }
+                                    if (gen == "ela") { Console.ForegroundColor = ConsoleColor.Magenta; }
+
+                                    Console.WriteLine("-Há quanto tempo você estava aqui em baixo?-");
+                                    Thread.Sleep(3000);
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("Minha presença real estava em outro lugar, porém, posso me manifestar em monumentos em minha homenagem.");
+                                    Thread.Sleep(3000);
+                                    Console.WriteLine("Fiz questão de aparecer quando vi alguém louvando um monumento tão isolado.");
+                                    Thread.Sleep(3000);
+                                    if (gen == "ele") { Console.ForegroundColor = ConsoleColor.Green; }
+                                    if (gen == "ela") { Console.ForegroundColor = ConsoleColor.Magenta; }
+                                    Thread.Sleep(3000);
+                                    Console.WriteLine("-O que você estava fazendo antes de vir para cá?-");
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("Estava vigiando a humanidade, vendo a arrogância e prepotência dos humanos.");
+                                    Thread.Sleep(3000);
+                                    Console.WriteLine("É impressionante como vocês têm a capacidade de se acharem superiores, mesmo não sabendo a diversidade de espécies que habitam a mesma terra que vocês.");
+
+                                    if (gen == "ele") { Console.ForegroundColor = ConsoleColor.Green; }
+                                    if (gen == "ela") { Console.ForegroundColor = ConsoleColor.Magenta; }
+                                    Thread.Sleep(3000);
+                                    Console.WriteLine("-Acredita que nós temos salvação?-");
+                                    Thread.Sleep(3000);
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("Sinceramente, se aprendessem a utilizar os recursos que têm, aprendessem a trabalhar unidos com vocês próprios e tentassem criar acordos com as outras raças.");
+                                    Console.WriteLine("É... pode ser que tenham um futuro produtivo...");
+
+                                    Console.ReadKey(true);
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("!");
+                                    Console.Clear();
+
+                                    Console.WriteLine("Bem, você se depara com uma grande abertura em frente a onde você estava. No seu lado esquerdo, você vê uma prateleira com um livro.");
+                                    Console.WriteLine("Ele estava numa prateleira com uma escrita estranha que você não consegue identificar.");
+                                    Thread.Sleep(3000);
+                                d6:
+                                    Console.WriteLine("Você pode lê-lo ou ignorar e seguir pelo templo.");
+                                    Thread.Sleep(500);
+
+                                    Console.WriteLine("1-Ler o livro.");
+                                    Thread.Sleep(500);
+                                    Console.WriteLine("2-Ignorar e seguir.");
+                                    e6 = (Console.ReadLine());
+
+                                    if ((e6 != "1" && e6 != "2"))
+                                    {
+                                        Console.ForegroundColor = ConsoleColor.Red;
+                                        Console.WriteLine("Por favor, {0}, siga as instruções do jogo e selecione uma das alternativas.", nome);
+                                        Thread.Sleep(3500);
+                                        Console.Clear();
+                                        goto d6;
+                                    }
+                                    if (e6 == "1")
+                                    {
+                                        Console.Clear();
+                                        leitura = 1;
+                                        Console.WriteLine("Você lê o suficiente para entender um pouco mais sobre essa língua estranha e descobre que ali era a seção de livros de magia.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Lendo um pouco mais, você começa a aprender alguns feitiços, porém, ouve um barulho alto vindo de um lugar distante.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Você pode tentar levar o livro para aprender seus feitiços futuramente.");
+                                        Thread.Sleep(1500);
+                                    livro:
+
+                                        Console.WriteLine("Você quer levá-lo?(s/n)");
+                                        string i = (Console.ReadLine());
+                                        if ((i != "s" && i != "n"))
+                                        {
+                                            Console.ForegroundColor = ConsoleColor.Red;
+                                            Console.WriteLine("Por favor, {0}, siga as instruções do jogo e selecione uma das alternativas.", nome);
+                                            Thread.Sleep(3500);
+                                            Console.Clear();
+                                            goto livro;
+                                        }
+
+
+                                        if (i == "s")
+                                        {
+                                            
+                                            Console.WriteLine("Você tenta levá-lo segurando, porém, a espada te atrapalha.");
+                                            Thread.Sleep(1000);
+                                            Console.WriteLine("Você quer largar a espada e levar o livro?(s/n)");
+                                            i = (Console.ReadLine());
+                                            if (i == "s")
+                                            {
+                                                Console.WriteLine("Apoio sua escolha, pode te ser útil, caso não, mate seus inimigos as próprias mãos.");
+                                                Livro = 1;
+                                                espada = 0;
+                                            }
+                                            if (i == "n") { Console.WriteLine("Tudo bem, afinal, a escolha é sua, porém eu recomendava que pegasse. Prosseguindo então."); }
+                                        }
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Você então ignora o livro. Pessoalmente, não ignoraria o livro, mas se assim deseja.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Você ouve barulho alto de algo grande logo a frente.");
+                                    Thread.Sleep(3000);
+                                    }
+
+                                    
+                                    Console.WriteLine("Você segue o caminho...");
+                                    Console.ReadKey(true);
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkBlue;
+                                    Console.ForegroundColor = ConsoleColor.White;
+                                    Console.WriteLine("!");
+                                    Console.Clear();
+                                    Console.WriteLine("Você sai do templo e se depara com outro corredor, porém, com uma luz no final.");
+
+                                    if (Livro == 1)
+                                    {
+                                        if (gen == "ele") { Console.ForegroundColor = ConsoleColor.Green; } if (gen == "ela") { Console.ForegroundColor = ConsoleColor.Magenta; }
+                                        Thread.Sleep(1500);
+                                        Console.WriteLine("-Eu queria saber uma coisa.-");
+
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Thread.Sleep(1500);
+                                        Console.WriteLine("Pode falar.");
+                                        if (gen == "ele") { Console.ForegroundColor = ConsoleColor.Green; } if (gen == "ela") { Console.ForegroundColor = ConsoleColor.Magenta; }
+                                        Thread.Sleep(1500);
+                                        Console.WriteLine("-Eu li no livro que alguns deuses são capazes de dar poderes a alguns mortais. Isso é verdade?-");
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Thread.Sleep(1500);
+                                        Console.WriteLine("Alguns sim, e eu entro nesse grupo. Posso ceder poderes momentâneos para mortais que eu considerar dignos.");
+                                        Thread.Sleep(1500);
+                                        Console.WriteLine("Eu já fiz isso algumas vezes. A mais recente foi numa guerra, um pequeno mortal foi a um de meus templos e pediu que o ajudasse.");
+                                        Thread.Sleep(2500);
+                                        Console.WriteLine("Observei-o durante um tempo no dia seguinte para conferir se era digno, e o avaliei bom o suficiente.");
+                                        Thread.Sleep(1500);
+                                        Console.WriteLine("Cedi alguns poderes para ele durante alguns minutos. Posso dizer com firmeza que aquilo fez a dferença na guerra. Ele varria multidões e eliminava exércitos.");
+                                        Thread.Sleep(1500);
+                                        if (gen == "ele") { Console.ForegroundColor = ConsoleColor.Green; } if (gen == "ela") { Console.ForegroundColor = ConsoleColor.Magenta; }
+                                        Console.WriteLine("-Eu poderia conseguir esses poderes?-");
+                                        Thread.Sleep(1000);
+
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("Talves eu pense em lhe conceder poderes...");
+                                    }
+                                    Console.ReadKey(true);
+                                    Console.WriteLine("Você chega a uma entrada de uma grande sala, passando por ela, se depara com uma criatura gigante de pele roxa, semelhante a um orc, e um porrete de metal na mão.");
+                                    Thread.Sleep(3000);
+                                    Console.WriteLine("Observando-o, você não encontra nenhuma fraqueza aparente, porém, a única parte do corpo da criatura que se encontra protegida por uma armadura de metal é o ombro esquerdo.");
+                                    Thread.Sleep(3000);
+                                    Console.WriteLine("A criatura está posicionada na única saída existente, sendo necessário você passar por ela para prosseguir.");
+                                    Thread.Sleep(3000);
+                                    Console.WriteLine("Observando a sala, você vê uma pequena adaga azul brilhante. Procurando um pouco mais, encontra um cinto com uma bainha perfeita para guardá-la.");
+                                    Thread.Sleep(3000);
+                                    if (espada == 1) { Console.WriteLine("Você percebe que sua espada está enferrujada e prestes a quebrar, então você larga sua espada e pega essa lâmina.");
+                                    Thread.Sleep(3000);}
+                                    if (Livro == 1) { Console.WriteLine("Você põe o cinto e guarda a lâmina na bainha."); 
+                                    	Thread.Sleep(1500);}
+                                d7:
+                                    Console.WriteLine("Você se depara com as seguintes escolhas:");
+                                    Thread.Sleep(500);
+                                    Console.WriteLine("1-Tentar atacar com a adaga.");
+                                    Thread.Sleep(500);
+                                    Console.WriteLine("2-Tentar conversar com o orc.");
+                                    Thread.Sleep(500);
+                                    if (Livro == 1)
+                                    {
+                                        Console.WriteLine("3-Tentar lançar um feitiço.");
+                                        Thread.Sleep(500);
+                                    }
+                                    if(dt=true){
+                                    	Console.WriteLine("4-Testar a lâmina pra ver se ela tá afiada.");
+                                    }
+                                    
+                                    Console.WriteLine("O que pretende fazer?");
+                                    e7 = (Console.ReadLine());
+                                    if ((e7 != "1" && e7 != "2" && e7 != "3" && e7 !="4"))
+                                    {
+                                        Console.ForegroundColor = ConsoleColor.Red;
+                                        Console.WriteLine("Por favor, {0}, siga as instruções do jogo e selecione uma das alternativas.", nome);
+                                        Thread.Sleep(3500);
+                                        Console.Clear();
+                                        goto d7;
+                                    }
+                                    
+                                    if(e7=="4"){
+                                    	Console.WriteLine("Você é idiota o suficiente pra testar se a lâmina tá afiada(Ainda não acredito que tenha essa opção).");
+                                    	Thread.Sleep(3000);
+                                    	Console.WriteLine("Você remove a lâmina da bainha e enfia na sua barriga, assustando até mesmo o orc.");
+                                    	Thread.Sleep(3000);
+                                    	Console.WriteLine("Depois de sangrar bastante, você cai no chão e começa a sentir sua vitalidade indo embora.");
+                                    	Thread.Sleep(3000);
+                                    	Console.WriteLine("Infelizmente, você morre e ninguém mais ouve falar de voc...Hã, calma, o que tá acontecendo?!");
+                                    	Thread.Sleep(3000);
+                                    	Console.WriteLine("Seu corpo começa a brilhar, onde antes estava a adaga azul, agora tem uma espada de 80cm de lâmina.");
+                                    	Thread.Sleep(3000);
+                                    	Console.WriteLine("Seu corpo começa a passar por uma espécie de metamorfose.");
+                                    	Thread.Sleep(3000);
+                                    	Console.WriteLine("Asas começam a surgir nas suas costas, seus dedos crescem até se tornarem garras, sua pele se desmancha, possuindo agora uma camada cinza com partes de lava.");
+                                    	Thread.Sleep(3000);
+                                    	Console.WriteLine("Eu não consigo acreditar... Depois de tanto tempo... Aquilo finalmente voltou... Digo, você virou aquilo...");
+                                    	Thread.Sleep(3000);
+                                    	Console.WriteLine("E, como uma maldição horrível, você se torna um demônio...");
+                                    	Console.ReadKey(true);
+                                    	Console.Clear();
+                                    	Console.BackgroundColor = ConsoleColor.Black;
+                                    	Console.ForegroundColor = ConsoleColor.White;
+                                    	Console.WriteLine("!");
+                                    	Console.Clear();
+                                    
+                                    	Console.WriteLine("Você estende a mão para o orc, que estava se tremendo de medo, e, com um estalar de dedos, grita com uma voz medonha uma das magias que eu mais odeio...");
+                                    	Console.ForegroundColor = ConsoleColor.Red;
+                                    	Thread.Sleep(3000);
+                                    	Console.WriteLine("DRAIN SOUL!");
+                                    	Console.ForegroundColor = ConsoleColor.White;
+                                    	Thread.Sleep(2000);
+                                    	Console.WriteLine("A criatura cai no chão com os olhos vazios...");
+                                    	Console.ReadKey(true);
+                                    	Console.Clear();
+                                    	Console.BackgroundColor = ConsoleColor.Red;
+                                    	Console.ForegroundColor = ConsoleColor.White;
+                                    	Console.WriteLine("!");
+                                    	Console.Clear();
+                                    
+                                    	Console.WriteLine("Você, com seus novos poderes, saí destruindo tudo na sua frente, até que encontra um grande portão com diversas luzes atrás.");
+                                    	Thread.Sleep(3000);
+                                    	Console.WriteLine("Com um soco, o destroí e encontra um homem muito bem vestido. O sujeito tira os óculos, revelando que suas pupilas são formadas por chamas.");
+                                    	Thread.Sleep(3000);
+                                    	Console.WriteLine("Ele começa a bater palmas, porém você avança para cima dele.");
+                                    	Thread.Sleep(3000);
+                                    	Console.WriteLine("Ele para sua mão sem demonstrar o mínimo esforço.");
+                                    	Thread.Sleep(3000);
+                                    	if(leitura==0){
+                                    		Console.WriteLine("Ele te joga contra a parede, e você parece ter se machucado mais do que deveria.");
+                                    		Thread.Sleep(3000);
+                                    		Console.WriteLine("Ah, entendi... Sua transformação acabou e você se chocou contra a lâmina, que havia retornado ao seu formato de adaga.");
+                                    		Thread.Sleep(3000);
+                                    		Console.WriteLine("Seu peito sangra bastante. O homem bem vestido avança na sua direção, demonstrando uma velocidade digna de deuses.");
+                                    		Thread.Sleep(3000);
+                                    		Console.WriteLine("Ele bate palmas, mais calmamente agora, e puxa a adaga do seu peito.");
+                                    		Thread.Sleep(3000);
+                                    		Console.WriteLine("Com um sorriso frio e sádico, ele diz uma palavra que você não consegue entender, e então a lâmina cresce novamente.");
+                                    		Thread.Sleep(3000);
+                                    		Console.WriteLine("Ele levanta a arma e arranca sua cabeça.");
+                                    		Thread.Sleep(3000);
+                                    		Console.WriteLine("Infelizmente {0}, você morreu definitivamente dessa vez.", nome[u]);
+                                    		Thread.Sleep(3000);
+                                    		Console.WriteLine("Admito que me surpreendeu um pouco ter usado magias de metamorfose, embora me assuste a forma que tenha escolhido tomar.");
+                                    		Thread.Sleep(3000);
+                                    		Console.WriteLine("Bem, de qualquer forma, parabéns por ter chegado tão longe. Pressione qualquer tecla para sair.");
+                                    		Console.ReadKey(true);
+                                    		goto Menu;
+                                    	}
+                                    	Console.WriteLine("Ele te joga longe, porém você já havia dominado a habilidade de usar suas asas, virando-se e se lançando contra ele com a espada.");
+                                    	Thread.Sleep(3000);
+                                    	Console.WriteLine("Seu golpe atingiu em cheio o peito dele. Após essa bela estocada, você grita outro feitiço que eu detesto.");
+                                    	Thread.Sleep(3000);
+                                    	Console.ForegroundColor = ConsoleColor.Black;
+                                    	Console.WriteLine("DISINTEGRATE!");
+                                    	Console.ForegroundColor= ConsoleColor.White;
+                                    	Thread.Sleep(3000);
+                                    	Console.WriteLine("Ele virá pó, restando apenas seu óculos de sol. Você o pega e põe no rosto para conseguir resistir ao brilho intenso do sol.");
+                                    	Thread.Sleep(3000);
+                                    	Console.WriteLine("Então, com seu novo acessório, sai da caverna e vai em direção a luz...");
+                                    	Thread.Sleep(3000);
+                                    	Console.WriteLine("Parabéns {0}, você conseguiu zerar o RHOPE, espero que esteja feliz com isso, embora não concorde com seus metódos.", nome);
+                                    	Thread.Sleep(3000);
+                                    	Console.WriteLine("Bem, ainda sim, tenho que admitir que foi uma vitória inimaginável.");
+                                    	Thread.Sleep(3000);
+                                    	Console.WriteLine("Mais uma vez, parabéns, espero que tenha curtido a aventura. Pressione qualquer tecla para finalizar...");
+                                    	goto Menu;
+                                    }
+                                    
+                                    if (e7 == "2")
+                                    {
+                                        Console.WriteLine("Você tenta convencer a criatura para deixá-l{0} passar.", ad);
+                                        Thread.Sleep(3000);
+                                        if (gen == "ele") { Console.ForegroundColor = ConsoleColor.Green; } if (gen == "ela") { Console.ForegroundColor = ConsoleColor.Magenta; }
+                                        Console.WriteLine("Erh... Olá?");
+                                        Thread.Sleep(3000);
+                                        Console.ForegroundColor = ConsoleColor.Red;
+                                        Console.WriteLine("Hã... AH, QUEM É VOCÊ?");
+                                        Thread.Sleep(3000);
+                                        if (gen == "ele") { Console.ForegroundColor = ConsoleColor.Green; } if (gen == "ela") { Console.ForegroundColor = ConsoleColor.Magenta; }
+                                        Console.WriteLine("Oi... Eu sou {0}, estou perdid{1}, queria saber se você poderia me deixar passar, eu quero sair dessa caverna.", gamertag, ad);
+                                        Thread.Sleep(3000);
+                                        Console.ForegroundColor = ConsoleColor.Red;
+                                        Console.WriteLine("HAHAHAHA, ÓBVIO QUE NÃO, EU VOU É TE DEVORAR, HAHAHA.");
+                                        Thread.Sleep(3000);
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("Enquanto você tentava sacar a adaga, a criatura te segura e manda garganta abaixo.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Você morre e ninguém mais ouve falar de você.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Veio bem até aqui, infelizmente, escolher a opção pacífica não é sempre a resposta. Parabéns por chegar até aqui {0}, você pode tentar novamente mais tarde...", nome);
+                                        Console.ReadKey(true);
+                                        Console.Clear();
+                                        goto Menu;
+                                    }
+                                    if (e7 == "1")
+                                    {
+                                        Console.WriteLine("Você saca a adaga e parte para cima da criatura, atacando-a de surpresa.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Você percebe que a armadura da criatura é presa por uma amarra que a lãmina pode atravessar.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Você tenta acertar a barriga da criatura, porém a única coisa que consegue fazer é se aproximar pois a criatura desvia do golpe.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Então, em contra-ataque a sua estocada, o orc te dá um golpe que te joga pra longe.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Você bate contra a parede e a adaga se solta da sua mão, ficando a sua vista e revelando escritas estranhas na lâmina.");
+                                        Thread.Sleep(3000);
+                                        if (leitura == 0)
+                                        {
+                                            Console.WriteLine("Você tenta ler, porém é uma escrita muito estranha.");
+                                            Thread.Sleep(3000);
+                                            Console.WriteLine("Antes que você conseguisse levantar, a criatura te esmaga com o porrete");
+                                            Thread.Sleep(3000);
+                                            Console.WriteLine("Você morre e ninguém mais ouve falar de você.");
+                                            Thread.Sleep(3000);
+                                            Console.WriteLine("Veio bem até aqui, infelizmente, você não conhecia essa língua, quem sabe se tivesse lido o livro, não teria entendido o que queria dizer. Bem, parabéns por chegar até aqui {0}, você pode tentar novamente mais tarde...", nome);
+                                            Console.ReadKey(true);
+                                            Console.Clear();
+                                            goto Menu;
+                                        }
+                                        Console.Write("Você consegue decifrar as escritas, revelando o nome da lâmina. O nome dela era ");
+                                        Thread.Sleep(350);
+                                        Console.ForegroundColor = ConsoleColor.Blue;
+                                        Console.Write("Blekopí");
+                                        Thread.Sleep(550);
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine("(equivalente a Corte Azul em Grego).");
+                                        Thread.Sleep(850);
+                                        Console.WriteLine("Assim que você diz o nome da lâmina, ela passa a crescer até a lâmina ter 80cm.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Quando termina de aumentar, você parece mais forte. Todo o cansaço que tinha, sumiu. Os ferimentos pareciam não doer mais.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Então, no seu surto de força repentina, você parte para cima da criatura, que agora não parecia mais tão aterrorizante.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("O orc até tenta desviar, mas você estava muito rápido e corta as amarras da armadura, revelando um ponto verde no ombro do monstro.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Você enfia a lâmina na marca verde até as letras não aparecerem mais.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Após a criatura gritar de dor, você rapidamente remove a espada e se afasta. A criatura cai no chão agonizando e se desfaz em fumaça.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Assim que você vê a lâmina, percebe que ela está brilhando muito forte. Você passa a mão na escrita e a lâmina para de brilhar e começa a voltar ao seu tamanho normal.");
+                                        Thread.Sleep(3000);
+                                        Console.WriteLine("Você volta ao seu estado normal e pôe a lâmina de volta na bainha.");
+                                    
+                                        
+                                    }
+                                    if (e7 == "3")
+                                    {
+                                        Console.WriteLine("Você abre o livro em busca de um feitiço.");
+                                        Thread.Sleep(850);
+                                        Console.Write("Numa determinada página, você vê um monte de letras misturadas, porém, sente que tem um feitiço ali capaz de ");
+                                        Thread.Sleep(350);
+                                        Console.ForegroundColor = ConsoleColor.Yellow;
+                                        Console.Write("destruí-lo");
+                                        Thread.Sleep(350);
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Console.WriteLine(".");
+                                        Thread.Sleep(1000);
+                                        double x = 0;
+                                    Feitiço:
+                                        if (x > 3)
+                                        {
+                                            Console.WriteLine("Você erra tanto que tenta procurar outro feitiço, porém o orc já partido para cima de você.");
+                                            Thread.Sleep(3000);
+                                            Console.WriteLine("A única coisa que você conseguiu fazer foi colocar o livro para cima, tentando se defender.");
+                                            Thread.Sleep(3000);
+                                            Console.WriteLine("Mas, fala sério, como um livro protegeria você de um porrete de pedra?!");
+                                            Thread.Sleep(3000);
+                                            Console.WriteLine("Infelizmente, você morre e ninguém mais ouve falar de você.");
+                                            Thread.Sleep(3000);
+                                            Console.WriteLine("Veio bem até aqui, infelizmente, seu livro não tinha um feitiço contra porretes de pedra, ou talvez tivesse, nunca saberemos."); 
+                                            Thread.Sleep(3000);
+                                            Console.WriteLine("Bem, parabéns por chegar até aqui {0}, você pode tentar novamente mais tarde...", nome);
+                                            Console.ReadKey(true);
+                                            Console.Clear();
+                                            goto Menu;
+                                        }
+                                        if (x <= 3)
+                                        {
+                                            Console.ForegroundColor = ConsoleColor.Yellow;
+                                            Console.WriteLine("Tente achar o feitiço:");
+                                            Thread.Sleep(100);
+                                            Console.WriteLine("a g d b e y d n s f");
+                                            Thread.Sleep(100);
+                                            Console.WriteLine("p l e s g v b a f m");
+                                            Thread.Sleep(100);
+                                            Console.WriteLine("j d s n s y w c i w");
+                                            Thread.Sleep(100);
+                                            Console.WriteLine("q e t a v y f s i h");
+                                            Thread.Sleep(100);
+                                            Console.WriteLine("x e r w a f j f c k");
+                                            Thread.Sleep(100);
+                                            Console.WriteLine("i z o b a v n d a v");
+                                            Thread.Sleep(100);
+                                            Console.WriteLine("b d y d b g d s f h");
+                                            Thread.Sleep(100);
+                                            Console.WriteLine("a h r s v h d x b j");
+                                            Thread.Sleep(100);
+                                            Console.WriteLine("o d v n t a f u i q");
+                                            Thread.Sleep(100);
+                                            Console.WriteLine("e t d a c h b s e v");
+                                            Thread.Sleep(100);
+                                            Console.ForegroundColor = ConsoleColor.White;
+                                            Console.WriteLine("Digite o feitiço.");
+                                            feitiço = (Console.ReadLine());
+                                            if (feitiço != "destroy")
+                                            {
+                                            	if(x==1){
+                                            		Console.WriteLine("Você tenta pronunciar, mas ainda não está certo...");
+                                            	}
+                                            	if(x==2){
+                                            		Console.WriteLine("Você tenta novamente, chamando a atenção do monstro...");
+                                            	}
+                                            	if(x==3){
+                                            		Console.WriteLine("Você tenta mais uma vez, torcendo para que tenha dado certo, porém, o monstro já havia levantado...");
+                                            	}
+                                                Console.ReadKey(true);
+                                                
+                                                
+                                                
+                                                x = x + 1;
+                                                goto Feitiço;
+                                            }
+                                            if (feitiço == "destroy")
+                                            {
+                                                if (gen == "ele") { Console.ForegroundColor = ConsoleColor.Green; } if (gen == "ela") { Console.ForegroundColor = ConsoleColor.Magenta; }
+                                                Console.WriteLine("DESTROY!");
+                                                Thread.Sleep(850);
+                                                Console.ForegroundColor = ConsoleColor.White;
+                                                Console.WriteLine("Durante alguns segundos, nada aconteceu, a única mudança no ambiente havia sido que agora o orc sabia da sua presença.");
+                                                Thread.Sleep(3000);
+                                                Console.WriteLine("Quando ele ia correr na sua direção, você sente uma fraqueza, porém percebe que o monstro havia tomado uma expressão de terror.");
+                                                Thread.Sleep(3000);
+                                                Console.WriteLine("Ele cai no chão e inplode, deixando você sozinho na sala.");
+
+                                            }
+
+                                        }
+                                    }
+                                    Console.Write("Em uma coisa eu tenho que concordar com você, isso foi");Thread.Sleep(150); Console.Write("."); Thread.Sleep(150); Console.Write(".");Thread.Sleep(150); Console.Write("."); 
+                                    Console.WriteLine("INCRÍVEL!!");
+                                    Thread.Sleep(850);
+                                    Console.WriteLine("Você ainda consegue me impressionar muito...");
+                                    Console.ReadKey(true);
+                                    
+                                    //Começando uma nova parte
+                                    
+                                    
+                                     Console.Clear();
+                                     CRT.BackGroundColor(CRT.LIGHTCYAN);
+                                   CRT.TextColor(CRT.DARKGRAY);
+                                    Console.WriteLine("!");
+                                    Console.Clear();
+									
+                                    Console.WriteLine("Depois de revistar tudo o que o monstro tinha, você percebe que ele tinha um frasco com um líquido verde dentro.");
+                                    Thread.Sleep(3000);
+                                    Console.WriteLine("Você procura no cômodo algo sobre e acaba descobrindo que aquilo é uma poção de cura, muito útil caso tenha algum ferimento muito grave.");
+                                    Thread.Sleep(3000);
+                                    Console.WriteLine("Você também percebe uma pequena porta logo atrás de onde o orc estava sentado.");
+                                    Thread.Sleep(3000);
+                                    Console.WriteLine("Você segue por ela, se abaixando para conseguir passar...");
+                                    
+                                    Console.ReadKey(true);
+ 									Console.Clear();
+                                    CRT.BackGroundColor(CRT.BLACK);
+                                    CRT.TextColor(CRT.LIGHTGRAY);
+                                    Console.WriteLine("!");
+                                    Console.Clear();
+                                    
+                                   //Não sei como descrever essa parte, então vai ficar por isso mesmo.
+                                   
+                                      if (Livro == 1)
+                                    {
+                                        if (gen == "ele") { Console.ForegroundColor = ConsoleColor.Green; } if (gen == "ela") { Console.ForegroundColor = ConsoleColor.Magenta; }
+                                        
+                                        Console.WriteLine("-Ei, Paluthena, sobre aquela nossa conversa de mais cedo, quais poderes você conseguiria me dar?-");
+
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("Ah, diversos. Posso te dar poderes de convocar armas de vento, mudar sua aparência, porém não mudará você de verdade, poderes de voo, de fazer rajadas de vento, entre outros.");
+                                        if (gen == "ele") { Console.ForegroundColor = ConsoleColor.Green; } if (gen == "ela") { Console.ForegroundColor = ConsoleColor.Magenta; }
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("-Uau, espero conseguir testar algum dia.-");
+                                        Console.ForegroundColor = ConsoleColor.White;
+                                        Thread.Sleep(2000);
+                                        Console.WriteLine("Apenas o futuro dirá...");
+                                        Console.ReadKey(true);
+                                        Console.Clear();
+                                    }
+                                      CRT.TextColor(CRT.LIGHTGRAY);
+                                      Console.WriteLine("Você rasteja até um ponto onde o corredor se torna maior, suficiente para você ficar de pé.");
+                                      Thread.Sleep(2000);
+                                      Console.WriteLine("Você também consegue perceber que há um pequeno animal recolhido no canto.");
+                                      Thread.Sleep(2000);
+                                      Console.WriteLine("Aproximando-se, você percebe que se trata de um coelho. Ele tinha um grande corte na lateral do corpo e estava sangrando muito.");
+                                      Thread.Sleep(2000);
+                                     d8:
+                                      CRT.TextColor(CRT.LIGHTGRAY);
+                                      Console.WriteLine("Você simpatiza com o animal, e se vê podendo fazer duas escolhas:");
+                                      Thread.Sleep(150);
+                                      Console.WriteLine("1-Dar a poção para o animal.");
+                                      Thread.Sleep(150);
+                                      Console.WriteLine("2-Deixá-lo sofrendo.");
+                                      Thread.Sleep(150);
+                                      Console.WriteLine("O que pretende fazer?");
+                                    e8 = (Console.ReadLine());
+                                    if ((e8 != "1" && e8 != "2"))
+                                    {
+                                        Console.ForegroundColor = ConsoleColor.Red;
+                                        Console.WriteLine("Por favor, {0}, siga as instruções do jogo e selecione uma das alternativas...", nome);
+                                        Console.ReadKey(true);
+                                        CRT.TextColor(CRT.LIGHTGRAY);
+                                        Console.Clear();
+                                        goto d8;
+                                    }
+                                    
+                                    if(e8== "1"){
+                                    	Console.WriteLine("Você se abaixa, porém o animal começa a ficar nervoso.");
+                                    	Thread.Sleep(2000);
+                                    	Console.WriteLine("Para o acalmar, você começa a acariciá-lo.");
+                                    	Thread.Sleep(2000);
+                                    	Console.WriteLine("Ele vai se acalmando até que se acostuma com a sua presença.");
+                                    	Thread.Sleep(2000);
+                                    	Console.WriteLine("Você despeja a poção sobre o ferimento, que vai se fechando lentamente.");
+                                    	Thread.Sleep(2000);
+                                    	Console.WriteLine("Ele se aninha em você.");
+                                    	Thread.Sleep(2000);
+                                    	Console.WriteLine("Após isso, ele segue por um pequeno túnel, mandando pra você o que parecia ser um 'boa sorte'.");
+                                    	Thread.Sleep(2000);
+                                    	if (gen == "ele") { Console.ForegroundColor = ConsoleColor.Green; } if (gen == "ela") { Console.ForegroundColor = ConsoleColor.Magenta; }
+                                    	Console.WriteLine("Obrigado carinha...");
+                                    	CRT.TextColor(CRT.LIGHTGRAY);
+                                    	bondade = 1;
+                                    }
+                                    if(e8=="2"){
+                                    	Console.WriteLine("Você olha para o animal, mas decide o ignorar.");
+                                    	Thread.Sleep(2000);
+                                    	Console.WriteLine("Sinceramente, acho que você poderia ter dado a poção para ele, mas suas escolhas cabem a você, não é?...");
+                                    	maldade = 1;
+                                    }
+                                    
+                                    Console.ReadKey(true);
+                                    Console.Clear();
+                                    CRT.BackGroundColor(CRT.DARKGRAY);
+                                    CRT.TextColor(CRT.LIGHTGREEN);
+                                    Console.WriteLine("!");
+                                    Console.Clear();
+                                    Console.WriteLine("Você escuta uma voz vindo da parte da frente, então segue se esgueirando.");
+                                    Thread.Sleep(1000);
+                                    CRT.TextColor(CRT.YELLOW);
+                                    Console.WriteLine("Eu disse de maneira bem clara pra você não tentar fugir, mas você não me deu ouvidos. Agora, terei de te punir.");
+                                    Thread.Sleep(1000);
+                                    CRT.TextColor(CRT.WHITE);
+                                    Console.WriteLine("Parece ter algo perigoso à frente. Recomendo avançar calmamente.");
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("Você começa a avançar mais devagar.");
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("Chega a um ponto que você consegue identificar de onde a voz vem.");
+                                    Thread.Sleep(1000);
+                                    CRT.TextColor(CRT.YELLOW);
+                                    Console.WriteLine("Ora ora, seu rostinho desesperado é algo muito lindo.");
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("Hm... O que eu posso fazer agora? Ah, já sei, que tal isso?");
+                                    Thread.Sleep(1000);
+                                    CRT.TextColor(CRT.WHITE);
+                                    Console.WriteLine("Você vê o dono da voz. Ele é um homem de estátura média, com uma roupa similar a de bandidos de filmes de velho-oeste.");
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("No chão, você vê uma garota amarrada com o que pareciam ser marcas de cortes e queimaduras.");
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("O sujeito fez segurava o que parecia ser um chicote mágico.");
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("Quando ele estava prestes a bater na garota com o chicote, uma outra figura, bem maior do que aquela, chega.");
+                                    Thread.Sleep(1000);
+                                    CRT.TextColor(CRT.LIGHTRED);
+                                    if(maldade==1){Console.WriteLine("HIHIHI, Dix, eu achei um coelho no caminho para cá, mas tava com tanta fome que comi direto.");
+                                    Thread.Sleep(1000);
+                                    CRT.TextColor(CRT.YELLOW);	Console.WriteLine("Você não toma jeito, né Jax?");
+                                    Thread.Sleep(1000);
+                                    CRT.TextColor(CRT.LIGHTRED);Console.WriteLine("Desculpa, eu não aguentei.");
+                                    Thread.Sleep(1000);
+                                    CRT.TextColor(CRT.YELLOW);Console.WriteLine("Ah... Ok.");
+                                    }
+                                    CRT.TextColor(CRT.LIGHTRED);Console.WriteLine("Dix, eu já posso devorá-la?");
+                                    Thread.Sleep(1000);
+                                    CRT.TextColor(CRT.YELLOW);Console.WriteLine("Ainda não, Jax. O mestre tem planos para ela.");
+                                    Thread.Sleep(1000);
+                                    CRT.TextColor(CRT.WHITE);
+                                    Console.WriteLine("Esses dois parecem encrenca, mas essa garota está em perigo.");
+                                    Thread.Sleep(1000);
+                                    Console.WriteLine("Você pode tentar atacá-los ou conversar");
+                                    if(Livro==1){
+                                    	Console.WriteLine(" ou lançar um feitiço.");}
+                                    else{Console.WriteLine(".");}
+                                   d9:
+                                    Console.WriteLine("O que pretende escolher?");
+                                    Thread.Sleep(100);
+                                    Console.WriteLine("1-Atacá-los.");
+                                    Thread.Sleep(100);
+                                    Console.WriteLine("2-Conversar com eles.");
+                                    Thread.Sleep(100);
+                                    if(Livro==1){Console.WriteLine("3-Lançar um feitiço.");
+                                    Thread.Sleep(100);}
+                                    Console.WriteLine("O que fará?");
+                                    e9= Console.ReadLine();
+                                    if ((e9 != "1" && e9 != "2"))
+                                    {
+                                        Console.ForegroundColor = ConsoleColor.Red;
+                                        Console.WriteLine("Por favor, {0}, siga as instruções do jogo e selecione uma das alternativas...", nome);
+                                        Console.ReadKey(true);
+                                        CRT.TextColor(CRT.LIGHTGRAY);
+                                        Console.Clear();
+                                        goto d9;
+                                    }
+                                    if(e9=="2"){
+                                    	Console.WriteLine("Você tenta conversar com eles. De verdade, isso parece estupidez, mas, tudo bem.");
+                                    	Console.WriteLine("Você se aproxima o suficiente para eles te verem.");
+                                    	CRT.TextColor(CRT.YELLOW);Console.WriteLine("Ora ora, Jax, parece que temos convidados.");
+                                    	Thread.Sleep(1000);
+                                    	CRT.TextColor(CRT.LIGHTRED);Console.WriteLine("Eu posso comê-l{0} Dix? Diz que sim, por favorzinho.", ad);
+                                    	
+                                    	CRT.TextColor(CRT.YELLOW);Console.WriteLine("Não vejo nenhum problema com isso.");
+                                    	Thread.Sleep(1000);
+                                    	CRT.TextColor(CRT.LIGHTRED);Console.WriteLine("HEHEHE.");
+                                    	Console.ForegroundColor=ConsoleColor.White;
+                                    	Console.WriteLine("O sujeito que se chama Jax começa a se aproximar.");
+                                    	if (gen == "ele") { Console.ForegroundColor = ConsoleColor.Green; } if (gen == "ela") { Console.ForegroundColor = ConsoleColor.Magenta; }
+                                    	Console.WriteLine("Calma, eu não quero problemas, só quero voltar para a superfície.");
+                                    	CRT.TextColor(CRT.YELLOW);Console.WriteLine("Tarde demais, é uma pena para você.");
+                                    	Thread.Sleep(1000);
+                                    	CRT.TextColor(CRT.LIGHTRED);Console.WriteLine("Eu vou te devorar HEHEHE.");
+                                    	CRT.TextColor(CRT.WHITE);
+                                    	Console.WriteLine("Você percebe o perigo e saca a adaga, dizendo seu nome para que cresça");
+                                    	CRT.TextColor(CRT.YELLOW);Console.WriteLine("Uau, ganharei uma recompensa por levar essa arma ao mestre.");
+                                    	Thread.Sleep(1000);
+                                    	CRT.TextColor(CRT.LIGHTRED);Console.WriteLine("Recompensa HEHEHE.");
+                                    	CRT.TextColor(CRT.WHITE);
+                                    	Console.WriteLine("Você tenta partir pra cima do Dix, mas Jax entra na sua frente.");
+                                    	Console.WriteLine("Quando ele estava prestes a te devorar, Dix grita.");
+                                    	CRT.TextColor(CRT.YELLOW);Console.WriteLine("Calma Jax, deixe-me cuidar disso.");
+                                    	Thread.Sleep(1000);
+                                    	CRT.TextColor(CRT.LIGHTRED);Console.WriteLine("Vou poder comê-l{0} depois?", ad);
+                                    	CRT.TextColor(CRT.YELLOW);Console.WriteLine("Deixarei sim");
+                                    	Thread.Sleep(1000);
+                                    	CRT.TextColor(CRT.LIGHTRED);Console.WriteLine("Tudo bem então. Você vai sofrer bastante HEHEHE.");
+                                    	
+                                   		
+                                    	
+                                    }
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+
+                                }
+
+
+
+                            }
+
+                        }
+
+                    }
+                    goto Menu;
+
+            }
+            #endregion}
+            }
+  
+            } 
+        }
+
+
+
+        }
+
+
